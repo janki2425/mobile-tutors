@@ -7,6 +7,7 @@
   --white: #ffffff;
   --navy-blue: #1D1A63;
   --gold: #DCB731;
+  --H1-64: 64px;
   --H1-56: 56px;
   --H1-48: 48px;
   --H1-40: 40px;
@@ -40,12 +41,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: v
-}
-
-.P-14 {
-  font-size: var(--P-14);
-  line-height: var(--line-height-150);
+  font-family: var(--font-sans);
 }
 
 .H1-20 {
@@ -53,8 +49,80 @@ body {
   line-height: var(--line-height-140);
 }
 
+.H1-32 {
+  font-size: var(--H1-32);
+  line-height: var(--line-height-140);
+}
+
+.H1-40 {
+  font-size: var(--H1-40);
+  line-height: var(--line-height-140);
+}
+
+.H1-48 {
+  font-size: var(--H1-48);
+  line-height: var(--line-height-140);
+}
+
+.H1-56 {
+  font-size: var(--H1-56);
+  line-height: var(--line-height-140);
+}
+
+.H1-64 {
+  font-size: var(--H1-64);
+  line-height: var(--line-height-120);
+}
+
+
 .P-10 {
   font-size: var(--P-10);
   line-height: var(--line-height-140);
 }
 
+.P-14 {
+  font-size: var(--P-14);
+  line-height: var(--line-height-150);
+}
+
+.P-18 {
+  font-size: var(--P-18);
+  line-height: var(--line-height-140);
+}
+
+.P-20 {
+  font-size: var(--P-20);
+  line-height: var(--line-height-140);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-navy-blue {
+  color: var(--navy-blue);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.bg-navy-blue {
+  background-color: var(--navy-blue);
+}
+
+.bg-gold {
+  background-color: var(--gold);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}

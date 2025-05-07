@@ -3,11 +3,11 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 const Footer = () => {
   return (
-    <div className='w-full h-[447px] bg-[#F4F4F4] flex flex-col items-center justify-center'>
-      <div className='flex max-w-[1360px] gap-[40px] items-start'>
-        <Image src="/logo.png" alt="logo" width={165} height={80} />
-        <div className='flex gap-[40px] items-start justify-center'>
-            <div className='flex flex-col w-[232px] gap-[16px] items-center justify-center'>
+    <div className='w-full h-cover py-12 bg-[#F4F4F4] flex flex-col items-start xl:items-center justify-center'>
+      <div className='flex flex-col xl:flex-row max-w-[1360px] pl-12 xl:pl-0 gap-[20px] items-start'>
+        <Image src="/logo.png" alt="logo" width={165} height={80} className='flex mb-4 xl:mr-24' />
+        <div className='flex flex-col md:flex-row gap-[10px] items-start justify-center'>
+            <div className='flex flex-col w-[232px] gap-[16px] justify-center'>
                 <h3 className='text-black font-[500] H1-20'>Quick Links</h3>
                 <ul className='flex flex-col gap-[4px] text-start P-14 text-black font-[500]'>
                     <li>Home</li>
@@ -19,7 +19,7 @@ const Footer = () => {
                     <li>Resources</li>
                 </ul>
             </div>
-            <div className='flex flex-col w-[232px] gap-[16px] items-center justify-center'>
+            <div className='flex flex-col w-[232px] gap-[16px] justify-center'>
                 <h3 className='text-black font-[500] H1-20'>Our Courses</h3>
                 <ul className='flex flex-col gap-[4px] text-start P-14 text-black font-[500]'>
                     <li>Lorem ipsum</li>
@@ -27,7 +27,7 @@ const Footer = () => {
                     <li>Lorem ipsum</li>
                 </ul>
             </div>
-            <div className='flex flex-col w-[232px] gap-[16px] items-center justify-center'>
+            <div className='flex flex-col w-[232px] gap-[16px] justify-center'>
                 <h3 className='text-black font-[500] H1-20'>Quick Links</h3>
                 <ul className='flex flex-col gap-[4px] text-start P-14 text-black font-[500]'>
                     <li>Lorem ipsum</li>
@@ -36,7 +36,7 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
-        <div className='flex gap-[24px] items-center justify-center'>
+        <div className='flex flex-col md:flex-row gap-[24px] items-center justify-center'>
             <Button variant="default" className='bg-black text-white rounded-[16px] px-[24px] py-[12px]'>
                 <Image src="/footer-icon/star.svg" alt="star" width={23} height={22} />
                 <p className='P-10 text-white font-[500]'>Trustpilot</p>
@@ -48,9 +48,9 @@ const Footer = () => {
         </div>
       </div>
       <hr className='w-full max-w-[1360px] h-[1px] px-8 bg-black mt-[60px] mb-[10px]'/>
-      <div className='flex max-w-[1360px] items-center justify-between w-full px-4'>
+      <div className='flex flex-col xl:flex-row max-w-[1360px] items-center justify-between w-full px-8'>
         <p className='P-14 text-black font-[500]'>&copy; 2025 Mobile Tutors. All rights reserved.</p>
-        <div className='flex items-center gap-[40px]'>
+        <div className='flex flex-col md:flex-row items-center gap-[40px]'>
             <div className='flex gap-[16px] items-center justify-center'>
                 <Image src="/footer-icon/face-book.svg" alt="facebook" width={24} height={24} className='cursor-pointer'/>
                 <Image src="/footer-icon/instagram.svg" alt="instagram" width={30} height={30} className='cursor-pointer'/>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <Image src="/footer-icon/linkedin.svg" alt="linkedin" width={30} height={30} className='cursor-pointer'/>
                 <Image src="/footer-icon/youtube.svg" alt="youtube" width={40} height={40} className='cursor-pointer'/>
             </div>
-            <div className='flex gap-[16px] items-center justify-center'>
+            <div className='md:flex grid grid-cols-3 gap-[16px] items-center justify-center'>
                 <Image src="/footer-icon/visa.svg" alt="visa" width={48} height={48} className='cursor-pointer'/>
                 <Image src="/footer-icon/mastercard.svg" alt="mastercard" width={48} height={48} className='cursor-pointer'/>
                 <Image src="/footer-icon/amex.svg" alt="amex" width={48} height={30} className='cursor-pointer'/>
