@@ -8,7 +8,7 @@ const Footer = () => {
         <Image src="/logo.png" alt="logo" width={165} height={80} className='flex mb-4 xl:mr-24' />
         <div className='flex flex-col md:flex-row gap-[10px] items-start justify-center'>
             <div className='flex flex-col w-[232px] gap-[16px] justify-center'>
-                <h3 className='text-black font-[500] H1-20'>Quick Links</h3>
+                <h6 className='text-black font-[500] H6-20'>Quick Links</h6>
                 <ul className='flex flex-col gap-[4px] text-start P-14 text-black font-[500]'>
                     <li>Home</li>
                     <li>About Us</li>
@@ -20,7 +20,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='flex flex-col w-[232px] gap-[16px] justify-center'>
-                <h3 className='text-black font-[500] H1-20'>Our Courses</h3>
+                <h6 className='text-black font-[500] H6-20'>Our Courses</h6>
                 <ul className='flex flex-col gap-[4px] text-start P-14 text-black font-[500]'>
                     <li>Lorem ipsum</li>
                     <li>Lorem ipsum</li>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='flex flex-col w-[232px] gap-[16px] justify-center'>
-                <h3 className='text-black font-[500] H1-20'>Quick Links</h3>
+                <h6 className='text-black font-[500] H6-20'>Quick Links</h6>
                 <ul className='flex flex-col gap-[4px] text-start P-14 text-black font-[500]'>
                     <li>Lorem ipsum</li>
                     <li>Lorem ipsum</li>
