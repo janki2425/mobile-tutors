@@ -3,7 +3,7 @@ import Video from "@/components/Video";
 import About from "@/components/About";
 import Benefits from "@/components/Benefits";
 import SuccessStory from "@/components/SuccessStory";
-
+import OutCourse from "@/components/OurCourse";
 export default function Home() {
   return (
     <div className="mx-auto">
@@ -12,6 +12,7 @@ export default function Home() {
       <About />
       <Benefits />
       <SuccessStory />
+      <OutCourse />
     </div>
   );
 }
