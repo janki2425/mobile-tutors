@@ -19,13 +19,13 @@ const Benefits = () => {
                     </div>
                     <div className='flex flex-col gap-[16px] max-w-[620px] justify-center'>
                         <h4 className='text-[28px] lg:H4-40 font-[500]'>Personalised Assessment</h4>
-                        <p className='text-[16px] lg:P-16 font-[500] max-w-[580px]'>We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
+                        <p className='text-[16px] lg:P-16 font-[500] max-w-[580px]'>We assess your child&apos;s strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row gap-[60px] p-4 border border-[#E0E0E0] md:border-none md:p-0 rounded-[24px]'>
                     <div className='flex flex-col gap-[16px] max-w-[620px] justify-center'>
                         <h4 className='text-[28px] lg:H4-40 font-[500]'>Live Lessons</h4>
-                        <p className='P-16 font-[500] max-w-[580px]'>Our expert tutors deliver interactive, engaging lessons tailored to your child's needs. With real-time feedback and active support, students grasp key concepts and build confidence.</p>
+                        <p className='P-16 font-[500] max-w-[580px]'>Our expert tutors deliver interactive, engaging lessons tailored to your child&apos;s needs. With real-time feedback and active support, students grasp key concepts and build confidence.</p>
                     </div>
                     <div className='relative'>
                         <Image src={'/benefits/benefit-img-2.jpg'} alt='benefit' width={660} height={400} 
