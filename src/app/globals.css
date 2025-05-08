@@ -8,12 +8,11 @@
   --navy-blue: #1D1A63;
   --gold: #DCB731;
   --H1-64: 64px;
-  --H1-56: 56px;
-  --H1-48: 48px;
-  --H1-40: 40px;
-  --H1-32: 32px;
-  --H1-24: 24px;
-  --H1-20: 20px;
+  --H2-56: 56px;
+  --H3-48: 48px;
+  --H4-40: 40px;
+  --H5-32: 32px;
+  --H6-20: 20px;
   --P-20: 20px;
   --P-18: 18px;
   --P-16: 16px;
@@ -44,28 +43,28 @@ body {
   font-family: var(--font-sans);
 }
 
-.H1-20 {
-  font-size: var(--H1-20);
+.H6-20 {
+  font-size: var(--H5-20);
   line-height: var(--line-height-140);
 }
 
-.H1-32 {
-  font-size: var(--H1-32);
+.H5-32 {
+  font-size: var(--H5-32);
   line-height: var(--line-height-140);
 }
 
-.H1-40 {
-  font-size: var(--H1-40);
+.H4-40 {
+  font-size: var(--H4-40);
   line-height: var(--line-height-140);
 }
 
-.H1-48 {
-  font-size: var(--H1-48);
+.H3-48 {
+  font-size: var(--H3-48);
   line-height: var(--line-height-140);
 }
 
-.H1-56 {
-  font-size: var(--H1-56);
+.H2-56 {
+  font-size: var(--H2-56);
   line-height: var(--line-height-140);
 }
 
