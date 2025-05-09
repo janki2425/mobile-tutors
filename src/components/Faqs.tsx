@@ -2,23 +2,27 @@
 import React, { useState } from 'react'
 import { Button } from './ui/button'
 import Image from 'next/image'
-const faqData = [
+export const faqData = [
   {
     question: 'Question text goes here',
     answer:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.',
+    category: ['GENERAL', 'COURSES', 'PAYMENT & PRICING', 'ENROLLMENT REQUIREMENTS', 'LESSONS', 'REFERRALS']
   },
   {
     question: 'Question text goes here',
     answer: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.',
+    category: ['GENERAL', 'COURSES', 'PAYMENT & PRICING', 'ENROLLMENT REQUIREMENTS', 'LESSONS', 'REFERRALS']
   },
   {
     question: 'Question text goes here',
     answer: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.',
+    category: ['GENERAL', 'COURSES', 'PAYMENT & PRICING', 'ENROLLMENT REQUIREMENTS', 'LESSONS', 'REFERRALS']
   },
   {
     question: 'Question text goes here',
     answer: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.',
+    category: ['GENERAL', 'COURSES', 'PAYMENT & PRICING', 'ENROLLMENT REQUIREMENTS', 'LESSONS', 'REFERRALS']
   },
 ]
 
