@@ -38,15 +38,17 @@ const Faqs = () => {
             </div>
             <div className='w-full'>
                 {faqData.map((faq, idx) => (
-                <div key={idx} style={{ marginBottom: 16 }}>
-                    <div
-                    className='flex justify-between items-start cursor-pointer font-[600] py-2'
-                    onClick={() => handleToggle(idx)}
-                    >
+                <div key={idx} className='mb-4'>
+                    <div className='flex justify-between items-start font-[600] py-2'>
                         <h6 className='H6-20 font-[600] py-2'>{faq.question}</h6>
-                        <span className='font-[500] text-[24px] px-2'>
-                            {openIndex === idx ? '–' : '+'}
-                        </span>
+                        <div
+                        className='cursor-pointer'
+                        onClick={() => handleToggle(idx)}
+                        > 
+                            <span className='font-[500] text-[24px] px-2'>
+                                {openIndex === idx ? '-' : '+'}
+                            </span>
+                        </div>
                     </div>
                     {openIndex === idx && faq.answer && (
                     <div className='font-[500] P-16'>
