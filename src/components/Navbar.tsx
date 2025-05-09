@@ -11,7 +11,7 @@ import { Menu } from "lucide-react"
 const Navbar = () => {
   return (
     <>
-      <div className='px-[40px] h-[80px] border-b border-gray-400 flex items-center'>
+      <div className='px-[40px] h-[80px] border-b border-gray-400 flex items-center relative z-20'>
         <nav className='flex justify-between items-center w-full'>
             <div className='flex gap-4 items-center'>
                 <Image src="/logo.png" alt="logo" width={111} height={54} />
@@ -20,12 +20,12 @@ const Navbar = () => {
             {/* Desktop Navigation */}
             <div className='hidden lg:block'>
                 <ul className='flex gap-[8px] items-center P-14 text-black font-[500]'>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">HOME</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">ABOUT US</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">COURSES</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">FAQS</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">TESTIMONIALS</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">BLOGS</a></li>
+                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/">HOME</a></li>
+                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#about">ABOUT US</a></li>
+                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#courses">COURSES</a></li>
+                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/faqs">FAQS</a></li>
+                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/testimonials">TESTIMONIALS</a></li>
+                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/blogs">BLOGS</a></li>
                     <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">RESOURCES</a></li>
                 </ul>
             </div>
