@@ -6,6 +6,7 @@ import SuccessStory from "@/components/SuccessStory";
 import OutCourse from "@/components/OurCourse";
 import Testimonials from "@/components/Testimonials";
 import Faqs from "@/components/Faqs";
+import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <div className="mx-auto">
@@ -17,6 +18,7 @@ export default function Home() {
       <OutCourse />
       <Testimonials />   
       <Faqs />
+      <Contact />
     </div>
   );
 }
