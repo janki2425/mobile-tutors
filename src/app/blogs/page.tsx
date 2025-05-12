@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import SuccessStory from '@/components/SuccessStory'
 import Contact from '@/components/Contact'
+import { useRouter } from 'next/navigation'
 
 const blogCategory = [
     'TIPS FOR EXAM SUCCESS',
@@ -11,23 +12,27 @@ const blogCategory = [
     'OTHERS',
 ]
 
-const blogData = [
+export const blogData = [
         {
+            id: 1,
             title: 'Personalised Assessment',
             description: "We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.",
             image: '/blogs/blogs-img.jpg',
         },
         {
+            id: 2,
             title: 'Personalised Assessment',
             description: "We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.",
             image: '/blogs/blogs-img.jpg',
         },
         {
+            id: 3,
             title: 'Personalised Assessment',
             description: "We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.",
             image: '/blogs/blogs-img.jpg',
         },
         {
+            id: 4,
             title: 'Personalised Assessment',
             description: "We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.",
             image: '/blogs/blogs-img.jpg',
@@ -37,6 +42,14 @@ const blogData = [
 
 const blogs = () => {
     const [openIndex, setOpenIndex] = useState(0)
+    const router = useRouter()
+    const [selectedBlog, setSelectedBlog] = useState<number | null>(null)
+
+    const handleBlogClick = (id: number) => {
+        setSelectedBlog(id)
+        router.push(`/blogs/${id}`)
+    }
+
 
     const handleToggle = (idx: number) => {
         setOpenIndex(openIndex === idx ? 0 : idx)
@@ -56,15 +69,16 @@ const blogs = () => {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[40px]'>
             {blogData.map((blog, idx) => (
-                <div key={idx}  className='flex flex-col gap-[24px] max-w-[660px]'>
-                    
+                <div 
+                key={idx} 
+                onClick={() => handleBlogClick(blog.id)}
+                className='flex flex-col gap-[24px] max-w-[660px]'>
                         <Image src={blog.image} alt={blog.title} width={660} height={400}  className='rounded-[24px]'/>
                         <div className='flex flex-col gap-[16px]'>
                             <h4 className='H4-40 font-[500]'>{blog.title}</h4>
                             <p className='P-16 font-[500]'>{blog.description}</p>
                         </div>
                         <Button variant='outline' className='py-[8px] px-[24px] w-fit P-14 rounded-[16px]'>READ MORE</Button>
-                   
                 </div>
             ))}
         </div>
