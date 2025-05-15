@@ -1,5 +1,4 @@
 'use client'
-import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import { usePathname } from "next/navigation";
 import "./globals.css";
@@ -11,11 +10,6 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
   variable: "--font-sans",
 });
-
-// export const metadata: Metadata = {
-//   title: "Mobile Tutors",
-//   description: "Mobile Tutors is a platform for students to learn and improve their skills.",
-// };
 
 export default function RootLayout({
   children,
