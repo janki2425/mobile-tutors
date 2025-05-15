@@ -40,7 +40,7 @@ export const blogData = [
 
 ]
 
-const blogs = () => {
+const Blogs = () => {
     const [openIndex, setOpenIndex] = useState(0)
     const router = useRouter()
     const [selectedBlog, setSelectedBlog] = useState<number | null>(null)
@@ -90,4 +90,4 @@ const blogs = () => {
   )
 }
 
-export default blogs
+export default Blogs

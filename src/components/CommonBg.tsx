@@ -1,6 +1,5 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
-import { useParams } from 'next/navigation'
 
 const pathTitles: { [key: string]: { title: string; subtitle: string } } = {
   '/faqs': {

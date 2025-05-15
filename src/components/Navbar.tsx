@@ -6,7 +6,8 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+import {  Menu } from "lucide-react"
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -20,13 +21,27 @@ const Navbar = () => {
             {/* Desktop Navigation */}
             <div className='hidden lg:block'>
                 <ul className='flex gap-[8px] items-center P-14 text-black font-[500]'>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/">HOME</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#about">ABOUT US</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#courses">COURSES</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/faqs">FAQS</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/testimonials">TESTIMONIALS</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="/blogs">BLOGS</a></li>
-                    <li className='px-[5px] py-[3px] cursor-pointer'><a href="#">RESOURCES</a></li>
+                    <li>
+                        <Link href="/" className='px-[5px] py-[3px] cursor-pointer'>HOME</Link>
+                    </li>
+                    <li>
+                        <Link href="#about" className='px-[5px] py-[3px] cursor-pointer'>ABOUT US</Link>
+                    </li>
+                    <li>
+                        <Link href="#courses" className='px-[5px] py-[3px] cursor-pointer'>COURSES</Link>
+                    </li>
+                    <li>
+                        <Link href="/faqs" className='px-[5px] py-[3px] cursor-pointer'>FAQS</Link>
+                    </li>
+                    <li>
+                        <Link href="/testimonials" className='px-[5px] py-[3px] cursor-pointer'>TESTIMONIALS</Link>
+                    </li>
+                    <li>
+                        <Link href="/blogs" className='px-[5px] py-[3px] cursor-pointer'>BLOGS</Link>
+                    </li>
+                    <li>
+                        <Link href="#" className='px-[5px] py-[3px] cursor-pointer'>RESOURCES</Link>
+                    </li>
                 </ul>
             </div>
 
@@ -50,13 +65,27 @@ const Navbar = () => {
                         </div>
                         <div className="flex flex-col gap-6 mt-6 px-4">
                             <ul className='flex flex-col gap-4 P-14 text-black font-[500]'>
-                                <li className='cursor-pointer'><a href="#">HOME</a></li>
-                                <li className='cursor-pointer'><a href="#">ABOUT US</a></li>
-                                <li className='cursor-pointer'><a href="#">COURSES</a></li>
-                                <li className='cursor-pointer'><a href="#">FAQS</a></li>
-                                <li className='cursor-pointer'><a href="#">TESTIMONIALS</a></li>
-                                <li className='cursor-pointer'><a href="#">BLOGS</a></li>
-                                <li className='cursor-pointer'><a href="#">RESOURCES</a></li>
+                            <li>
+                                    <Link href="/" className='cursor-pointer'>HOME</Link>
+                                </li>
+                                <li>
+                                    <Link href="#about" className='cursor-pointer'>ABOUT US</Link>
+                                </li>
+                                <li>
+                                    <Link href="#courses" className='cursor-pointer'>COURSES</Link>
+                                </li>
+                                <li>
+                                    <Link href="/faqs" className='cursor-pointer'>FAQS</Link>
+                                </li>
+                                <li>
+                                    <Link href="/testimonials" className='cursor-pointer'>TESTIMONIALS</Link>
+                                </li>
+                                <li>
+                                    <Link href="/blogs" className='cursor-pointer'>BLOGS</Link>
+                                </li>
+                                <li>
+                                    <Link href="#" className='cursor-pointer'>RESOURCES</Link>
+                                </li>
                             </ul>
                             <div className='flex flex-col gap-4'>
                                 <Button variant="navy" className='rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
