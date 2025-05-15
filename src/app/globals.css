@@ -12,6 +12,7 @@
   --H3-48: 48px;
   --H4-40: 40px;
   --H5-32: 32px;
+  --H-24: 24px;
   --H6-20: 20px;
   --P-20: 20px;
   --P-18: 18px;
@@ -45,6 +46,11 @@ body {
 
 .H6-20 {
   font-size: var(--H6-20);
+  line-height: var(--line-height-140);
+}
+
+.H-24 {
+  font-size: var(--H-24);
   line-height: var(--line-height-140);
 }
 
