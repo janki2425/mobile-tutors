@@ -1,7 +1,7 @@
 'use client'
 import React ,{ useState } from 'react'
 import Image from 'next/image'
-import { blogData } from './page'
+import { blogData } from '@/utils/data' 
 import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 
