@@ -142,7 +142,7 @@ const Hero = () => {
           </div>
         )}
         </div>
-        {/* Add more steps as needed */}
+        
       
       </HeroCommon>
     )}
