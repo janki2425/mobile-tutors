@@ -15,7 +15,7 @@ const Testimonials = () => {
                     <div className='flex flex-col gap-[24px]'>
                         <div className='flex gap-[4px]'>
                             {Array.from({ length: 5 }).map((_, index) => (
-                                <div className='relative w-[27px] h-[26px] p-1 bg-[#00B67A]'>
+                                <div key={index} className='relative w-[27px] h-[26px] p-1 bg-[#00B67A]'>
                                 <Image src='/testimonials/star.svg' alt='star' width={23} height={22} 
                                 className='invert'/>
                                 <Image src='/testimonials/star-style.svg' alt='star' width={5} height={3} 
@@ -34,7 +34,7 @@ const Testimonials = () => {
                     <div className='flex flex-col gap-[24px]'>
                         <div className='flex gap-[4px]'>
                         {Array.from({ length: 5 }).map((_, index) => (
-                                <div className='relative w-[27px] h-[26px] p-1 bg-[#00B67A]'>
+                                <div key={index} className='relative w-[27px] h-[26px] p-1 bg-[#00B67A]'>
                                 <Image src='/testimonials/star.svg' alt='star' width={23} height={22} 
                                 className='invert'/>
                                 <Image src='/testimonials/star-style.svg' alt='star' width={5} height={3} 
