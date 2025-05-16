@@ -43,14 +43,14 @@ const FaqsPage = () => {
         </div>
         <div className='w-full'>
           {faqData.map((faq, idx) => (
-            <div key={idx} className='mb-4'>
+            <div key={idx} className='mb-4 border-[1px] border-black/16 px-[16px] rounded-[16px]'>
               <div className='flex justify-between items-start font-[600] py-2'>
                 <h6 className='H6-20 font-[600] py-2'>{faq.question}</h6>
                 <div
                   className='cursor-pointer'
                   onClick={() => handleQuestionToggle(idx)}
                 >
-                  <span className='font-[500] text-[24px] px-2'>
+                  <span className='font-[500] text-[24px] p-2'>
                     {openIndex === idx ? '-' : '+'}
                   </span>
                 </div>

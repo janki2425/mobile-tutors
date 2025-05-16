@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const HeroCommon = ({ children }: { children: ReactNode }) => {
   return (
-    <div className='flex items-center h-auto px-[40px] md:px-[80px]'>
-      <div className='flex-1 lg:pr-8 w-full'>
+    <div className='flex items-center h-auto'>
+      <div className='flex-1 w-full'>
         {children}
       </div>
       <div className='hidden cs:block flex-shrink-0 w-auto mt-0 mx-0 py-[80px]'>

@@ -9,7 +9,7 @@ const SuccessStory = () => {
           Get Inspired by our Students Success Stories
         </h3>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px] justify-items-center">
-            <div className="relative w-full max-w-[280px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px]">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-1.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
@@ -17,9 +17,9 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={40}
-                        height={40}
-                        className="absolute top-4 right-4 z-10"
+                        width={32}
+                        height={32}
+                        className="absolute top-[28px] right-[28px] z-10"
                     />
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px]">
@@ -30,7 +30,7 @@ const SuccessStory = () => {
                     </p>
                 </div>
             </div>
-            <div className="relative w-full max-w-[280px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px]">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-2.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
@@ -38,9 +38,9 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={40}
-                        height={40}
-                        className="absolute top-4 right-4 z-10"
+                        width={32}
+                        height={32}
+                        className="absolute top-[28px] right-[28px] z-10"
                     />
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px]">
@@ -50,7 +50,7 @@ const SuccessStory = () => {
                     </p>
                 </div>
             </div>
-            <div className="relative w-full max-w-[280px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px]">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-3.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
@@ -58,9 +58,9 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={40}
-                        height={40}
-                        className="absolute top-4 right-4 z-10"
+                        width={32}
+                        height={32}
+                        className="absolute top-[28px] right-[28px] z-10"
                     />
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px]">
@@ -70,7 +70,7 @@ const SuccessStory = () => {
                     </p>
                 </div>
             </div>
-            <div className="relative w-full max-w-[280px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px]">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-4.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
@@ -78,9 +78,9 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={40}
-                        height={40}
-                        className="absolute top-4 right-4 z-10"
+                        width={32}
+                        height={32}
+                        className="absolute top-[28px] right-[28px] z-10"
                     />
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px]">
