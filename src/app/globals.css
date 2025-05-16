@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -7,11 +8,13 @@
   --white: #ffffff;
   --navy-blue: #1D1A63;
   --gold: #DCB731;
+  --H-74: 74px;
   --H1-64: 64px;
   --H2-56: 56px;
   --H3-48: 48px;
   --H4-40: 40px;
   --H5-32: 32px;
+  --H-24: 24px;
   --H6-20: 20px;
   --P-20: 20px;
   --P-18: 18px;
@@ -48,6 +51,21 @@ body {
   line-height: var(--line-height-140);
 }
 
+.H6-20-120 {
+  font-size: var(--H6-20);
+  line-height: var(--line-height-120);
+}
+
+.H-24 {
+  font-size: var(--H-24);
+  line-height: var(--line-height-140);
+}
+
+.H-24-120 {
+  font-size: var(--H-24);
+  line-height: var(--line-height-120);
+}
+
 .H5-32 {
   font-size: var(--H5-32);
   line-height: var(--line-height-140);
@@ -58,9 +76,19 @@ body {
   line-height: var(--line-height-140);
 }
 
+.H4-40-120 {
+  font-size: var(--H4-40);
+  line-height: var(--line-height-120);
+}
+
 .H3-48 {
   font-size: var(--H3-48);
   line-height: var(--line-height-140);
+}
+
+.H3-48-120 {
+  font-size: var(--H3-48);
+  line-height: var(--line-height-120);
 }
 
 .H2-56 {
@@ -68,8 +96,18 @@ body {
   line-height: var(--line-height-140);
 }
 
+.H2-56-120 {
+  font-size: var(--H2-56);
+  line-height: var(--line-height-120);
+}
+
 .H1-64 {
   font-size: var(--H1-64);
+  line-height: var(--line-height-120);
+}
+
+.H-74{
+  font-size: var(--H-74);
   line-height: var(--line-height-120);
 }
 
@@ -124,4 +162,25 @@ body {
 
 .bg-black {
   background-color: var(--black);
+}
+
+.border-gold {
+  border-color: var(--gold);
+}
+
+@media (min-width: 1279px) {
+  .cs\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cs\:block {
+    display: block;
+  }
+}
+@media (min-width: 1280px) {
+  .cs\:flex {
+    display: flex;
+  }
 }

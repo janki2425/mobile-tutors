@@ -5,10 +5,10 @@ const SuccessStory = () => {
   return (
     <div className="w-full max-w-[1360px] mx-auto my-[60px]">
       <div className="flex flex-col gap-[40px]">
-        <h3 className="H3-48 px-4 font-[500] max-w-[800px] mx-auto text-center">
+        <h3 className="H3-48-120 font-[500] max-w-[800px] mx-auto text-center">
           Get Inspired by our Students Success Stories
         </h3>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[20px] justify-items-center px-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px] justify-items-center">
             <div className="relative w-full max-w-[280px] h-[400px]">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-1.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
@@ -17,8 +17,8 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={32}
-                        height={32}
+                        width={40}
+                        height={40}
                         className="absolute top-4 right-4 z-10"
                     />
                 </div>
@@ -38,8 +38,8 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={32}
-                        height={32}
+                        width={40}
+                        height={40}
                         className="absolute top-4 right-4 z-10"
                     />
                 </div>
@@ -58,8 +58,8 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={32}
-                        height={32}
+                        width={40}
+                        height={40}
                         className="absolute top-4 right-4 z-10"
                     />
                 </div>
@@ -78,8 +78,8 @@ const SuccessStory = () => {
                     <Image
                         src="/success-story/video-play.svg"
                         alt="play"
-                        width={32}
-                        height={32}
+                        width={40}
+                        height={40}
                         className="absolute top-4 right-4 z-10"
                     />
                 </div>

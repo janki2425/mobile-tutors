@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import {
@@ -9,7 +9,62 @@ import {
 import {  Menu } from "lucide-react"
 import Link from 'next/link'
 
+const navItems = [
+    {
+        id: 1,
+        name: 'HOME',
+        href: '/',
+        active: true
+    },
+    {
+        id: 2,
+        name: 'ABOUT US',
+        href: '#about',
+        active: false
+    },
+    {
+        id: 3,
+        name: 'COURSES',
+        href: '#courses',
+        active: false
+    },
+    {
+        id: 4,
+        name: 'FAQS',
+        href: '/faqs',
+        active: false
+    },
+    {
+        id: 5,
+        name: 'TESTIMONIALS',
+        href: '/testimonials',
+        active: false
+    },
+    {
+        id: 6,
+        name: 'BLOGS',
+        href: '/blogs',
+        active: false
+    },
+    {
+        id: 7,
+        name: 'RESOURCES',
+        href: '#resources',
+        active: false
+    },
+    
+]   
+
 const Navbar = () => {
+    const [items, setItems] = useState(navItems)
+
+    const handleActive = (id: number) => {
+        setItems(items.map(item => ({
+            ...item,
+            active: item.id === id
+        })))
+    }
+
   return (
     <>
       <div className='px-[40px] h-[80px] border-b border-gray-400 flex items-center relative z-20'>
@@ -19,40 +74,26 @@ const Navbar = () => {
             </div>
             
             {/* Desktop Navigation */}
-            <div className='hidden lg:block'>
-                <ul className='flex gap-[8px] items-center P-14 text-black font-[500]'>
-                    <li>
-                        <Link href="/" className='px-[5px] py-[3px] cursor-pointer'>HOME</Link>
-                    </li>
-                    <li>
-                        <Link href="#about" className='px-[5px] py-[3px] cursor-pointer'>ABOUT US</Link>
-                    </li>
-                    <li>
-                        <Link href="#courses" className='px-[5px] py-[3px] cursor-pointer'>COURSES</Link>
-                    </li>
-                    <li>
-                        <Link href="/faqs" className='px-[5px] py-[3px] cursor-pointer'>FAQS</Link>
-                    </li>
-                    <li>
-                        <Link href="/testimonials" className='px-[5px] py-[3px] cursor-pointer'>TESTIMONIALS</Link>
-                    </li>
-                    <li>
-                        <Link href="/blogs" className='px-[5px] py-[3px] cursor-pointer'>BLOGS</Link>
-                    </li>
-                    <li>
-                        <Link href="#" className='px-[5px] py-[3px] cursor-pointer'>RESOURCES</Link>
-                    </li>
+            <div className='hidden cs:block'>
+                <ul className='flex gap-[8px] items-center P-14 text-black font-[600]'>
+                    {items.map((item) => (
+                        <li key={item.id} 
+                        onClick={() => handleActive(item.id)}
+                        className={`px-[24px] py-[6px] rounded-[100px] cursor-pointer ${item.active ? 'border-[1px] border-black' : ''}`}>
+                            <Link href={item.href} >{item.name}</Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
 
             {/* Desktop Buttons */}
-            <div className='hidden lg:flex gap-[16px] items-center P-14 text-black font-[500]'>
+            <div className='hidden cs:flex gap-[16px] items-center P-14 text-black font-[500]'>
                 <Button variant="navy" className='rounded-[16px] px-[24px] py-[16px]'>GET STARTED</Button>
                 <Button variant="outline" className='rounded-[16px]'>LOGIN</Button>
             </div>
 
             {/* Mobile Menu */}
-            <div className='lg:hidden'>
+            <div className='cs:hidden flex'>
                 <Sheet>
                     <SheetTrigger asChild>
                         <button className="">
@@ -65,27 +106,13 @@ const Navbar = () => {
                         </div>
                         <div className="flex flex-col gap-6 mt-6 px-4">
                             <ul className='flex flex-col gap-4 P-14 text-black font-[500]'>
-                            <li>
-                                    <Link href="/" className='cursor-pointer'>HOME</Link>
+                            {items.map((item) => (
+                                <li key={item.id} 
+                                onClick={() => handleActive(item.id)}
+                                className={`px-[24px] py-[6px] rounded-[100px] cursor-pointer ${item.active ? 'border-[1px] border-black' : ''}`}>
+                                    <Link href={item.href} >{item.name}</Link>
                                 </li>
-                                <li>
-                                    <Link href="#about" className='cursor-pointer'>ABOUT US</Link>
-                                </li>
-                                <li>
-                                    <Link href="#courses" className='cursor-pointer'>COURSES</Link>
-                                </li>
-                                <li>
-                                    <Link href="/faqs" className='cursor-pointer'>FAQS</Link>
-                                </li>
-                                <li>
-                                    <Link href="/testimonials" className='cursor-pointer'>TESTIMONIALS</Link>
-                                </li>
-                                <li>
-                                    <Link href="/blogs" className='cursor-pointer'>BLOGS</Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className='cursor-pointer'>RESOURCES</Link>
-                                </li>
+                            ))}
                             </ul>
                             <div className='flex flex-col gap-4'>
                                 <Button variant="navy" className='rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
