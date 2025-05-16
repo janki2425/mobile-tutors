@@ -72,44 +72,45 @@ const Hero = () => {
     </div>
     }
     {enrollNow === true && (step === 1 || step === 2) && (
-      <HeroCommon>
+      <div className='w-full max-w-[1360px] mx-auto'>
+        <HeroCommon>
         <div className='w-full flex justify-center items-center'>
         {step === 1 && (
-          <div className='w-full p-[65px]'>
-            <div className='flex flex-col gap-4 md:gap-[24px] w-full max-w-[480px]'>
-            <div className='flex flex-col gap-2 md:gap-[8px]'>
-              <div className='w-full h-[4px] bg-[#EEEEEE]'>
-                <div className='w-[33%] h-[4px] bg-[#1D1A63]'></div>
+          <div className='w-full py-[65px] md:p-[65px] '>
+            <div className='flex flex-col gap-4 md:gap-[24px] w-full max-w-[480px] mx-auto'>
+              <div className='flex flex-col gap-2 md:gap-[8px]'>
+                <div className='w-full h-[4px] bg-[#EEEEEE]'>
+                  <div className='w-[33%] h-[4px] bg-[#1D1A63]'></div>
+                </div>
+                <h4 className="P-16 font-[500] mb-2">Step {step}/3</h4>
               </div>
-              <h4 className="P-16 font-[500] mb-2">Step {step}/3</h4>
-            </div>
-            <h4 className="H4-40-120 font-[500]">Which year group is your child in?</h4>
-            <p className="P-16 font-[500]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <div className="flex flex-col md:flex-row gap-4 md:gap-[24px]">
-              <div className="flex flex-col gap-[16px] bg-navy-blue text-white w-full md:max-w-[228px] p-4 md:p-[24px] text-start rounded-[16px]">
-                <h2 className="H2-56 font-[600]">KS3</h2>
-                <h6 className="H6-20 font-[600]">Year</h6>
-                <h6 className="P-16 font-[500]">7/8/9</h6>
+              <h4 className="H4-40-120 font-[500]">Which year group is your child in?</h4>
+              <p className="P-16 font-[500]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+              <div className="flex flex-col md:flex-row gap-4 md:gap-[24px]">
+                <div className="flex flex-col gap-[16px] bg-navy-blue text-white w-full md:max-w-[228px] p-4 md:p-[24px] text-start rounded-[16px]">
+                  <h2 className="H2-56 font-[600]">KS3</h2>
+                  <h6 className="H6-20 font-[600]">Year</h6>
+                  <h6 className="P-16 font-[500]">7/8/9</h6>
+                </div>
+                <div className="flex flex-col gap-[16px] bg-gray-100 text-black w-full md:max-w-[228px] p-4 md:p-[24px] text-start rounded-[16px]">
+                  <h2 className="H2-56 font-[600]">KS4</h2>
+                  <h6 className="H6-20 font-[600]">Year</h6>
+                  <h6 className="P-16 font-[500]">10/11</h6>
+                </div>
               </div>
-              <div className="flex flex-col gap-[16px] bg-gray-100 text-black w-full md:max-w-[228px] p-4 md:p-[24px] text-start rounded-[16px]">
-                <h2 className="H2-56 font-[600]">KS4</h2>
-                <h6 className="H6-20 font-[600]">Year</h6>
-                <h6 className="P-16 font-[500]">10/11</h6>
+              <div className="flex flex-col md:flex-row w-full max-w-[480px] gap-4 md:gap-[16px] mt-4 md:mt-0">
+                <Button 
+                variant="outline" 
+                className='w-1/2 max-w-[232px] text-black P-14 rounded-[16px] px-[24px] py-[8px] cursor-pointer'
+                onClick={handleBack}
+                >BACK</Button>
+                <Button 
+                variant="default" 
+                className='w-1/2 max-w-[232px] bg-gold text-black P-14 rounded-[16px] px-[24px] py-[8px] cursor-pointer'
+                onClick={handleContinue}
+                >CONTINUE</Button>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row w-full gap-4 md:gap-[16px] mt-4 md:mt-0">
-              <Button 
-              variant="outline" 
-              className='w-full max-w-[232px] text-black P-14 rounded-[16px] px-[24px] py-[8px] cursor-pointer'
-              onClick={handleBack}
-              >BACK</Button>
-              <Button 
-              variant="default" 
-              className='w-full max-w-[232px] bg-gold text-black P-14 rounded-[16px] px-[24px] py-[8px] cursor-pointer'
-              onClick={handleContinue}
-              >CONTINUE</Button>
-            </div>
-          </div>
           </div>
         )}
         {step === 2 && (
@@ -130,15 +131,15 @@ const Hero = () => {
               <Button variant='default' className='bg-gray-100 w-full text-black rounded-[16px] p-[24px]'>Physics</Button>
               <Button variant='default' className='bg-gray-100 w-full md:col-span-2 text-black rounded-[16px] p-[24px]'>Maths</Button>
             </div>
-            <div className="flex flex-col md:flex-row w-full gap-4 md:gap-[16px] mt-4 md:mt-0">
+            <div className="flex flex-col md:flex-row w-full max-w-[480px] gap-4 md:gap-[16px] mt-4 md:mt-0">
               <Button 
               variant="outline" 
-              className='w-full max-w-[232px] text-black rounded-[16px] px-[24px] py-[8px] cursor-pointer'
+              className='w-1/2 max-w-[232px] text-black rounded-[16px] px-[24px] py-[8px] cursor-pointer'
               onClick={handleBack}
               >BACK</Button>
               <Button 
               variant="default" 
-              className='w-full max-w-[232px] bg-gold text-black rounded-[16px] px-[24px] py-[8px] cursor-pointer'
+              className='w-1/2 max-w-[232px] bg-gold text-black rounded-[16px] px-[24px] py-[8px] cursor-pointer'
               onClick={handleContinue}
               >CONTINUE</Button>
             </div>
@@ -149,6 +150,7 @@ const Hero = () => {
         
       
       </HeroCommon>
+      </div>
     )}
     {step === 3 && (
           <div className='w-full max-w-[1280px] mx-auto'>

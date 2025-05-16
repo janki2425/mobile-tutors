@@ -3,48 +3,46 @@ import React, { useState } from 'react'
 import { faqData } from '@/components/Faqs'
 
 const faqCategory = [
-  'GENERAL',
-  'COURSES',
-  'PAYMENT & PRICING',
-  'ENROLLMENT REQUIREMENTS',
-  'LESSONS',
-  'REFERRALS'
+  { id: 1, title: 'GENERAL' },
+  { id: 2, title: 'COURSES' },
+  { id: 3, title: 'PAYMENT & PRICING' },
+  { id: 4, title: 'ENROLLMENT REQUIREMENTS' },
+  { id: 5, title: 'LESSONS' },
+  { id: 6, title: 'REFERRALS' }
 ]
 
 const FaqsPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState(0)
-  const [openIndex, setOpenIndex] = useState(0)
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const [activeCategoryId, setActiveCategoryId] = useState(1)
 
-  const handleCategoryToggle = (idx: number) => {
-    setSelectedCategory(idx)
+  const handleCategoryClick = (id: number) => {
+    setActiveCategoryId(id)
+    setOpenIndex(null) // reset any open question on category change
   }
 
   const handleQuestionToggle = (idx: number) => {
     setOpenIndex(openIndex === idx ? -1 : idx)
   }
-  const filteredFaqs = faqData.filter(
-    (faq) => faq.category.includes(faqCategory[selectedCategory])
-  )
+ 
+  // const filteredFaqs = faqData.filter(faq => faq.categoryId === activeCategoryId)
 
   return (
     <div className='w-full max-w-[1360px] mx-auto my-[60px] px-4'>
       <div className='flex flex-col gap-[24px]'>
         <div className='flex flex-wrap items-center'>
-          {faqCategory.map((category, idx) => (
-            <div key={idx} className='py-[10px] cursor-pointe'
-            onClick={() => {
-              handleCategoryToggle(idx)
-            }}>
+          {faqCategory.map((category) => (
+            <div key={category.id} className='py-[10px] cursor-pointe'
+            onClick={() => handleCategoryClick(category.id)}>
               <div
-                className={`flex justify-between items-center py-[6px] px-[24px] cursor-pointer rounded-[16px] ${selectedCategory === idx ? 'bg-gold' : ''}`}
+                className={`flex justify-between items-center py-[6px] px-[24px] cursor-pointer rounded-[16px] ${activeCategoryId === category.id ? 'bg-gold' : ''}`}
               >
-                <h6 className='H-24 font-[600]'>{category}</h6>
+                <h6 className='H-24 font-[600]'>{category.title}</h6>
               </div>
             </div>
           ))}
         </div>
         <div className='w-full'>
-          {filteredFaqs.map((faq, idx) => (
+          {faqData.map((faq, idx) => (
             <div key={idx} className='mb-4'>
               <div className='flex justify-between items-start font-[600] py-2'>
                 <h6 className='H6-20 font-[600] py-2'>{faq.question}</h6>
