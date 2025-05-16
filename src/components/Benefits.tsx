@@ -164,9 +164,9 @@ const Benefits = () => {
                   <Image
                     src="/benefits/video-play.svg"
                     alt="play"
-                    width={60}
-                    height={60}
-                    className="absolute top-[20px] right-[20px] md:top-[40px] md:right-[40px] w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
+                    width={48}
+                    height={48}
+                    className="absolute top-[40px] right-[40px] w-[48px] h-[48px]"
                   />
                 </div>
 

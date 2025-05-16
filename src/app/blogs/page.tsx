@@ -29,9 +29,9 @@ const Blogs = () => {
     }
   return (
     <>
-    <div className='w-full max-w-[1360px] mx-auto my-[60px] px-4'>
+    <div className='w-full max-w-[1360px] mx-auto my-[60px]'>
       <div className='flex flex-col gap-[40px]'>
-        <div className='flex flex-wrap items-center'>
+        <div className='flex flex-wrap items-center px-4'>
             {blogCategory.map((category, idx) => (
                 <div key={idx} className='py-[10px]'>
                 <div className={`flex justify-between items-center py-[6px] px-[24px] cursor-pointer rounded-[16px] ${openIndex === idx ? 'bg-gold' : ''}`} onClick={() => handleToggle(idx)}>
@@ -45,9 +45,9 @@ const Blogs = () => {
                 <div 
                 key={idx} 
                 onClick={() => handleBlogClick(blog.id)}
-                className='flex flex-col gap-[24px] max-w-[660px] cursor-pointer'>
-                        <Image src={blog.image} alt={blog.title} width={660} height={400}  className='rounded-[24px]'/>
-                        <div className='flex flex-col gap-[16px]'>
+                className='flex flex-col gap-[24px] max-w-[660px] h-auto cursor-pointer'>
+                        <Image src={blog.image} alt={blog.title} width={660} height={400}  className='rounded-[24px] h-[400px]'/>
+                        <div className='flex flex-col gap-[16px] px-4'>
                             <h4 className='H4-40-120 font-[500]'>{blog.title}</h4>
                             <p className='P-16 font-[500]'>{blog.description}</p>
                         </div>
