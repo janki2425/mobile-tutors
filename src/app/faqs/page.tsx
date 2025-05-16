@@ -38,7 +38,7 @@ const FaqsPage = () => {
               <div
                 className={`flex justify-between items-center py-[6px] px-[24px] cursor-pointer rounded-[16px] ${selectedCategory === idx ? 'bg-gold' : ''}`}
               >
-                <h6 className='text-[24px] font-[600]'>{category}</h6>
+                <h6 className='H-24 font-[600]'>{category}</h6>
               </div>
             </div>
           ))}

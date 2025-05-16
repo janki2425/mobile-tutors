@@ -35,7 +35,7 @@ const Blogs = () => {
             {blogCategory.map((category, idx) => (
                 <div key={idx} className='py-[10px]'>
                 <div className={`flex justify-between items-center py-[6px] px-[24px] cursor-pointer rounded-[16px] ${openIndex === idx ? 'bg-gold' : ''}`} onClick={() => handleToggle(idx)}>
-                    <h6 className='text-[24px] font-[600]'>{category}</h6>
+                    <h6 className='H-24 font-[600]'>{category}</h6>
                 </div>
                 </div>
             ))}
@@ -48,7 +48,7 @@ const Blogs = () => {
                 className='flex flex-col gap-[24px] max-w-[660px]'>
                         <Image src={blog.image} alt={blog.title} width={660} height={400}  className='rounded-[24px]'/>
                         <div className='flex flex-col gap-[16px]'>
-                            <h4 className='H4-40 font-[500]'>{blog.title}</h4>
+                            <h4 className='H4-40-120 font-[500]'>{blog.title}</h4>
                             <p className='P-16 font-[500]'>{blog.description}</p>
                         </div>
                         <Button variant='outline' className='py-[8px] px-[24px] w-fit P-14 rounded-[16px]'>READ MORE</Button>

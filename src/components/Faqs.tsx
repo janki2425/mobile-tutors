@@ -36,7 +36,7 @@ const Faqs = () => {
   return (
     <div className='max-w-[1360px] flex flex-col lg:flex-row px-4 mx-auto my-[60px]'>
         <div className='flex flex-col max-w-[836px] p-[40px] mx-auto gap-[24px]'>
-            <h3 className='font-[600] H3-48'>FAQs</h3>
+            <h3 className='font-[500] H3-48-120'>FAQs</h3>
             <div className='lg:hidden block my-auto mx-auto'>
                 <Image src='/faqs/faq-img.png' alt='faq' width={500} height={500} />
             </div>
@@ -49,9 +49,11 @@ const Faqs = () => {
                         className='cursor-pointer'
                         onClick={() => handleToggle(idx)}
                         > 
-                            <span className='font-[500] text-[24px] px-2'>
-                                {openIndex === idx ? '-' : '+'}
-                            </span>
+                            <div className='w-[24px] h-[24px]'>
+                              <span className='font-[500] text-[24px]'>
+                                  {openIndex === idx ? '-' : '+'}
+                              </span>
+                            </div>
                         </div>
                     </div>
                     {openIndex === idx && faq.answer && (

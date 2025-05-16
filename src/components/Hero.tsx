@@ -83,7 +83,7 @@ const Hero = () => {
               </div>
               <h4 className="P-16 font-[500] mb-2">Step {step}/3</h4>
             </div>
-            <h4 className="H4-40 font-[500]">Which year group is your child in?</h4>
+            <h4 className="H4-40-120 font-[500]">Which year group is your child in?</h4>
             <p className="P-16 font-[500]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-[24px]">
               <div className="flex flex-col gap-[16px] bg-navy-blue text-white w-full md:max-w-[228px] p-4 md:p-[24px] text-start rounded-[16px]">
@@ -121,7 +121,7 @@ const Hero = () => {
               </div>
               <h4 className="P-16 font-[500] mb-2">Step {step}/3</h4>
             </div>
-            <h4 className="H4-40 font-[500]">Which subject would you like to study?</h4>
+            <h4 className="H4-40-120 font-[500]">Which subject would you like to study?</h4>
             <p className="P-16 font-[500]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[24px] H-6 font-[600]'>
               <Button variant='default' className='bg-navy-blue w-full text-white rounded-[16px] p-[24px]'>English</Button>
@@ -161,7 +161,7 @@ const Hero = () => {
                     <h4 className="P-16 font-[500] mb-2">Step {step}/3</h4>
                   </div>
                   <div className='flex flex-col gap-[8px]'>
-                    <h4 className='H4-40 font-[500]'>Unlock Your Child&apos;s Full Potential</h4>
+                    <h4 className='H4-40-120 font-[500]'>Unlock Your Child&apos;s Full Potential</h4>
                     <p className='P-16 font-[500]'>Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                   </div>
 
@@ -172,7 +172,7 @@ const Hero = () => {
                         <Button variant='default' className='bg-white text-black rounded-[50px] px-[16px] py-[4px] P-14 font-[500] cursor-pointer'>Popular</Button>
                       </div>
                       <div className='flex flex-col gap-2 md:gap-[8px] pb-4 md:pb-[24px]'>
-                        <h2 className='H2-56 font-[700]'>£37</h2>
+                        <h2 className='H2-56-120 font-[700]'>£37</h2>
                         <p className='P-16 font-[500]'>Cost per lesson: £18.50</p>
                         <p className='P-16 font-[500]'>Live Lessons per week: 2</p>
                       </div>
@@ -188,12 +188,12 @@ const Hero = () => {
                           ))}
                         </div>
                       </div>
-                      <Button variant='default' className='w-full max-w-[475px] bg-black text-white rounded-[16px] px-[24px] py-[8px] P-14 font-[500] mt-auto cursor-pointer'>SIGN UP</Button>
+                      <Button variant='default' className='w-full max-w-[475px] bg-black text-white rounded-[16px] border-[1px] border-black px-[24px] py-[8px] P-14 font-[500] mt-auto cursor-pointer'>SIGN UP</Button>
                     </div>
                     <div className='flex flex-col w-full lg:max-w-[555px] bg-[#F5F5F5] rounded-[16px] p-4 md:p-[40px] gap-4 md:gap-[16px]'>
                         <h5 className='H5-24 font-[600]'>Launch Mastery</h5>
                         <div className='flex flex-col gap-[8px] pb-[24px]'>
-                          <h2 className='H2-56 font-[700]'>£10</h2>
+                          <h2 className='H2-56-120 font-[700]'>£10</h2>
                           <p className='P-16 font-[500]'>Cost per lesson: £5.00</p>
                           <p className='P-16 font-[500]'>Live Lessons per week: 2</p>
                         </div>
@@ -209,7 +209,7 @@ const Hero = () => {
                             ))}
                           </div>
                         </div>
-                        <Button variant='default' className='w-full max-w-[475px] bg-gold text-black rounded-[16px] px-[24px] py-[8px] P-14 font-[500] mt-auto cursor-pointer'>SIGN UP</Button>
+                        <Button variant='default' className='w-full max-w-[475px] bg-gold text-black border-[1px] border-gold rounded-[16px] px-[24px] py-[8px] P-14 font-[500] mt-auto cursor-pointer'>SIGN UP</Button>
                       </div>
                     </div>
 

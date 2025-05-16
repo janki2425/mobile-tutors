@@ -69,7 +69,6 @@ const Navbar = () => {
     <>
       <div className='px-[40px] h-[80px] border-b border-gray-400 flex items-center relative z-20'>
         <nav className='flex justify-between items-center w-full'>
-            <p className='cs:bg-red-500 bg-green-400 w-full'>hello</p>
             <div className='flex gap-4 items-center'>
                 <Image src="/logo.png" alt="logo" width={111} height={54} />
             </div>
@@ -94,7 +93,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className='cs:hidden'>
+            <div className='cs:hidden flex'>
                 <Sheet>
                     <SheetTrigger asChild>
                         <button className="">
