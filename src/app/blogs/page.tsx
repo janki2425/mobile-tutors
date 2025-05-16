@@ -45,7 +45,7 @@ const Blogs = () => {
                 <div 
                 key={idx} 
                 onClick={() => handleBlogClick(blog.id)}
-                className='flex flex-col gap-[24px] max-w-[660px]'>
+                className='flex flex-col gap-[24px] max-w-[660px] cursor-pointer'>
                         <Image src={blog.image} alt={blog.title} width={660} height={400}  className='rounded-[24px]'/>
                         <div className='flex flex-col gap-[16px]'>
                             <h4 className='H4-40-120 font-[500]'>{blog.title}</h4>

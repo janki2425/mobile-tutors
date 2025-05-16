@@ -40,6 +40,10 @@
   }
 } */
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -173,6 +177,17 @@ body {
     display: none;
   }
 }
+@media (min-width: 1279px) {
+  .cs\:flex-row {
+    display: flex;
+  }
+}
+@media (min-width: 1279px) {
+  .cs\:max-w-660 {
+    max-width: 660px;
+  }
+}
+
 
 @media (min-width: 1280px) {
   .cs\:block {
@@ -184,3 +199,5 @@ body {
     display: flex;
   }
 }
+
+
