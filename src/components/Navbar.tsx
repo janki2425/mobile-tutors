@@ -19,7 +19,7 @@ const navItems = [
     {
         id: 2,
         name: 'ABOUT US',
-        href: '#about',
+        href: '#',
         active: false
     },
     {
@@ -49,7 +49,7 @@ const navItems = [
     {
         id: 7,
         name: 'RESOURCES',
-        href: '#resources',
+        href: '#',
         active: false
     },
     

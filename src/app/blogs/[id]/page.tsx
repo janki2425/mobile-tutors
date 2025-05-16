@@ -8,8 +8,8 @@ const blog = () => {
     return (
         <>
         <div className='w-full max-w-[1360px] mx-auto py-[60px]'>
-           <div className='w-full flex flex-col gap-[40px]'>
-            <div className='flex flex-col gap-[16px]'>
+           <div className='w-full flex flex-col gap-[40px] px-4'>
+                <div className='flex flex-col gap-[16px]'>
                     <div className='flex flex-wrap justify-between gap-[10px]'>
                         <div className='flex flex-wrap gap-[16px]'>
                             <Button variant='outline' className='py-[6px] px-[24px] w-fit P-14 font-[500] rounded-[16px]'>MAY 07, 2025</Button>
