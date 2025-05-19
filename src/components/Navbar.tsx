@@ -25,7 +25,7 @@ const navItems = [
     {
         id: 3,
         name: 'COURSES',
-        href: '/#courses',
+        href: '/courses',
         active: false
     },
     {

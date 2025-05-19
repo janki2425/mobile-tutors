@@ -115,6 +115,11 @@ body {
   line-height: var(--line-height-120);
 }
 
+.H1-64-120 {
+  font-size: var(--H1-64);
+  line-height: var(--line-height-120);
+}
+
 .H-74{
   font-size: var(--H-74);
   line-height: var(--line-height-120);

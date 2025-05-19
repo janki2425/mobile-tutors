@@ -3,25 +3,8 @@ import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import HeroCommon from './HeroCommon'
+import Pricing from './Pricing'
 
-const launchGCSE = [
-  {id:1, description: "Access to lesson notes and recordings"},
-  {id:2, description: "Proven results with a proven system"},
-  {id:3, description: "Weekly marked homework with feedback"},
-  {id:4, description: "Marked Mock exams every 8 weeks with feedback"},
-  {id:5, description: "Unlimited 1-1 out-of-hours support"},
-  {id:6, description: "2 Grade improvement in 12 weeks Guaranteed"},
-  {id:7, description: "Small focused interactive classes"},
-  {id:8, description: "Initial assessment"},
-]
-const launchMastery = [
-  {id:1, description: "Access to lesson notes and recordings"},
-  {id:2, description: "Proven results with a proven system"},
-  {id:3, description: "Weekly homework with solutions"},
-  {id:4, description: "Mock exams every 8 weeks with solutions"},
-  {id:5, description: "Community support group"},
-  {id:6, description: "14-day Money-back Guarantee"},
-]
 
 const Hero = () => {
   const [enrollNow, setEnrollNow] = useState(false)
@@ -41,45 +24,6 @@ const Hero = () => {
   return (
     <>
     {enrollNow === false &&
-    //   <div className="w-full h-[620px]">
-    //   <div className="relative w-full min-h-[620px]">
-    //     <div className="absolute inset-0 bg-[url('/Hero/banner.jpg')] bg-cover bg-center bg-no-repeat"></div>
-    //     <div className="absolute inset-0 bg-black/[24%]"></div>
-    //     <div className="relative w-full h-[620px]">
-    //       <div className='absolute w-full max-w-[1360px] top-1/2 -translate-y-1/2 left-[60px] flex flex-col items-center gap-[24px] md:items-start z-10'>
-    //         <div className="w-full flex flex-col gap-[16px]">
-    //           <h1 className="text-white H1-64 font-[700] text-center md:text-left">Trusted by Parents. <br /> Proven by Results.</h1>
-    //           <p className="text-white text-base P-18 text-center md:text-left">Expert Tuition for KS3, GCSE & A-Level Success</p>
-    //         </div>
-    //         <div className="w-full flex gap-[48px] z-10 justify-center md:justify-start">
-    //           <div 
-    //           className='w-auto bg-gold text-black P-16 font-[500] rounded-[16px] px-[24px] py-[12px] cursor-pointer'
-    //           onClick={handleEnrollNow}
-    //           >
-    //             ENROLL NOW
-    //           </div>
-
-    //           <div className='flex items-center w-auto gap-[8px] bg-white text-black rounded-[16px] px-[24px] py-[12px] cursor-pointer'>
-    //             <div className='relative w-[23px] h-[22px] bg-transparent'>
-    //                 <Image src='/Hero/icons/star.svg' alt='star' width={23} height={22}/>
-    //                 <Image src='/Hero/icons/star-style.svg' alt='star' width={5} height={3} 
-    //                 className='absolute top-[13px] left-[11px]'/>
-    //             </div>
-    //             <Image src='/Hero/icons/trustpilot.svg' width={72} height={15} alt='trustpilot'/>
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <div className="absolute top-[528px] left-[60px] flex w-[88px] h-[32px] items-center justify-center md:justify-start gap-[24px] z-10">
-    //         <div className='flex w-[32px] h-[32px] items-center justify-center'>
-    //           <Image src={'/Hero/icons/left-arrow.svg'} width={19} height={32} alt="left" className="w-[19px] h-[32px] cursor-pointer"/>
-    //         </div>
-    //         <div className='flex w-[32px] h-[32px] items-center justify-center'>
-    //           <Image src={'/Hero/icons/right-arrow.svg'} width={19} height={32} alt="right" className="w-[19px] h-[32px] cursor-pointer"/>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="w-full h-[620px]">
   <div className="relative w-full min-h-[620px]">
     {/* Background Image */}
@@ -239,53 +183,7 @@ const Hero = () => {
                     <p className='P-16 font-[500]'>Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                   </div>
 
-                  <div className='flex flex-col lg:flex-row w-full gap-6 md:gap-[40px] mx-auto'>
-                    <div className='flex flex-col w-full lg:max-w-[555px] bg-gold rounded-[16px] p-4 md:p-[40px] gap-4 md:gap-[16px]'>
-                      <div className='w-full h-full flex  justify-between items-center'>
-                        <h5 className='H5-24 font-[600]'>Launch GCSE</h5>
-                        <div className='bg-white text-black rounded-[50px] px-[16px] py-[4px] P-14 font-[500] cursor-pointer'>Popular</div>
-                      </div>
-                      <div className='flex flex-col gap-2 md:gap-[8px] pb-4 md:pb-[24px]'>
-                        <h2 className='H2-56-120 font-[700]'>£37</h2>
-                        <p className='P-16 font-[500]'>Cost per lesson: £18.50</p>
-                        <p className='P-16 font-[500]'>Live Lessons per week: 2</p>
-                      </div>
-                      <hr />
-                      <div className='flex flex-col pt-4 md:pt-[24px] gap-4 md:gap-[24px]'>
-                        <div className='flex flex-col gap-4 md:gap-[16px] mb-3 min-h-[348px]'>
-                          <h6 className='H6-20 font-[600]'>Launch GCSE Includes:</h6>
-                          {launchGCSE.map((item) => (
-                            <div key={item.id} className='flex gap-[16px]'>
-                              <Image src='/Hero/icons/check.svg' alt="check" width={24} height={24} />
-                              <p className='P-16 font-[500]'>{item.description}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <Button variant='default' className='w-full max-w-[475px] bg-black text-white rounded-[16px] border-[1px] border-black px-[24px] py-[8px] P-14 font-[500] mt-auto cursor-pointer'>SIGN UP</Button>
-                    </div>
-                    <div className='flex flex-col w-full lg:max-w-[555px] bg-[#F5F5F5] rounded-[16px] p-4 md:p-[40px] gap-4 md:gap-[16px]'>
-                        <h5 className='H5-24 font-[600]'>Launch Mastery</h5>
-                        <div className='flex flex-col gap-[8px] pb-[24px]'>
-                          <h2 className='H2-56-120 font-[700]'>£10</h2>
-                          <p className='P-16 font-[500]'>Cost per lesson: £5.00</p>
-                          <p className='P-16 font-[500]'>Live Lessons per week: 2</p>
-                        </div>
-                        <hr />
-                        <div className='flex flex-col pt-4 md:pt-[24px] gap-4 md:gap-[24px]'>
-                          <div className='flex flex-col gap-4 md:gap-[16px] min-h-[348px]'>
-                            <h6 className='P-20 font-[600]'>Launch GCSE Includes:</h6>
-                            {launchMastery.map((item) => (
-                              <div key={item.id} className='flex gap-[16px]'>
-                                <Image src='/Hero/icons/check.svg' alt="check" width={24} height={24} />
-                                <p className='P-16 font-[500]'>{item.description}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                        <Button variant='default' className='w-full max-w-[475px] bg-gold text-black border-[1px] border-gold rounded-[16px] px-[24px] py-[8px] P-14 font-[500] mt-auto cursor-pointer'>SIGN UP</Button>
-                      </div>
-                    </div>
+                  <Pricing/>
 
                   <div className='flex w-full gap-4 md:gap-[16px]'>
                     <Button 
