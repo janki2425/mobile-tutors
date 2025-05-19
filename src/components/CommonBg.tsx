@@ -18,6 +18,14 @@ const pathTitles: { [key: string]: { title: string; subtitle: string } } = {
     title: 'BLOGS',
     subtitle: 'Home - Blogs',
   },
+  // '/courses':{
+  //   title: 'COURSES',
+  //   subtitle: 'Home - Courses',
+  // },
+  // '/courses/[id]':{
+  //   title: 'COURSES',
+  //   subtitle: 'Home - Courses',
+  // }
 }
 
 const CommonBg = () => {
@@ -28,6 +36,8 @@ const CommonBg = () => {
   else if (pathname === '/testimonials') titleObj = pathTitles['/testimonials'];
   else if (pathname === '/blogs') titleObj = pathTitles['/blogs'];
   else if (pathname.startsWith('/blogs/')) titleObj = pathTitles['/blogs/[id]'];
+  // else if (pathname === '/courses') titleObj = pathTitles['/courses'];
+  // else if (pathname.startsWith('/courses/')) titleObj = pathTitles['/courses/[id]'];
 
   return (
     <div className="relative w-full h-[400px]">

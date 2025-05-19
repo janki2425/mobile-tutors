@@ -19,10 +19,14 @@ const RelatedBlog = () => {
       <div className='flex flex-col gap-[40px]'>
         <div className='flex justify-between items-center px-4'>
             <h3 className='H3-48-120 font-[500]'>Related Blogs</h3>
-            <div className="flex px-4 items-center gap-[24px]">
-                <Image src={'/Hero/icons/left-arrow.svg'} width={40} height={24} alt="left" className="cursor-pointer"/>
-                <Image src={'/Hero/icons/right-arrow.svg'} width={40} height={24} alt="right" className="cursor-pointer"/>
-            </div>
+            <div className="flex w-[88px] h-[32px] items-center gap-[24px] z-10">
+                    <div className="flex w-[32px] h-[32px] items-center justify-center">
+                    <Image src={'/testimonials/left-arrow.svg'} width={19} height={32} alt="left" className="w-[19px] h-[32px] cursor-pointer" />
+                    </div>
+                    <div className="flex w-[32px] h-[32px] items-center justify-center">
+                    <Image src={'/testimonials/right-arrow.svg'} width={19} height={32} alt="right" className="w-[19px] h-[32px] cursor-pointer" />
+                    </div>
+                </div>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 mx-auto gap-[40px]'>
                 {blogData.slice(0, 2).map((blog, idx) => (

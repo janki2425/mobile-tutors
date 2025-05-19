@@ -88,8 +88,8 @@ const Navbar = () => {
 
             {/* Desktop Buttons */}
             <div className='hidden cs:flex gap-[16px] items-center P-14 text-black font-[500]'>
-                <Button variant="navy" className='rounded-[16px] px-[24px] py-[16px]'>GET STARTED</Button>
-                <Button variant="outline" className='rounded-[16px]'>LOGIN</Button>
+                <Button variant="navy" className='rounded-[16px] px-[24px] py-[8px] cursor-pointer'>GET STARTED</Button>
+                <Button variant="outline" className='rounded-[16px] py-[8px] px-[24px] cursor-pointer'>LOGIN</Button>
             </div>
 
             {/* Mobile Menu */}

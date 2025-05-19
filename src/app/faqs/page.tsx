@@ -23,11 +23,9 @@ const FaqsPage = () => {
   const handleQuestionToggle = (idx: number) => {
     setOpenIndex(openIndex === idx ? -1 : idx)
   }
- 
-  // const filteredFaqs = faqData.filter(faq => faq.categoryId === activeCategoryId)
 
   return (
-    <div className='w-full max-w-[1360px] mx-auto my-[60px] px-4'>
+    <div className='w-full max-w-[1360px] mx-auto my-[60px]'>
       <div className='flex flex-col gap-[24px]'>
         <div className='flex flex-wrap items-center'>
           {faqCategory.map((category) => (

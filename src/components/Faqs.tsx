@@ -43,17 +43,15 @@ const Faqs = () => {
             <div className='w-full'>
                 {faqData.map((faq, idx) => (
                 <div key={idx} className='mb-4'>
-                    <div className='flex justify-between items-start font-[600] py-2'>
-                        <h6 className='H6-20 font-[600] py-2'>{faq.question}</h6>
+                    <div className='flex justify-between items-start font-[600] py-[12px]'>
+                        <h6 className='H6-20 font-[600]'>{faq.question}</h6>
                         <div
                         className='cursor-pointer'
                         onClick={() => handleToggle(idx)}
                         > 
-                            <div className='w-[24px] h-[24px]'>
                               <span className='font-[500] text-[24px]'>
                                   {openIndex === idx ? '-' : '+'}
                               </span>
-                            </div>
                         </div>
                     </div>
                     {openIndex === idx && faq.answer && (
@@ -66,7 +64,7 @@ const Faqs = () => {
             </div>
             <Button
                 variant='default'
-                className='bg-gold rounded-[16px] P-14 max-w-[150px]'
+                className='bg-gold rounded-[16px] P-14 max-w-[150px] py-[8px] px-[24px]'
             >
                 EXPLORE MORE
             </Button>
