@@ -1,13 +1,36 @@
+'use client'
 import React from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const SuccessStory = () => {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+  const isTestimonialsPage = pathname === '/testimonials';
+  const isBlogPage = pathname === '/blogs';
   return (
     <div className="w-full max-w-[1360px] mx-auto my-[60px]">
       <div className="flex flex-col gap-[40px]">
-        <h3 className="H3-48-120 font-[500] max-w-[800px] mx-auto text-center">
-          Get Inspired by our Students Success Stories
-        </h3>
+        {isHomePage && (
+            <h3 className="H3-48-120 font-[500] max-w-[800px] mx-auto text-center">
+                Get Inspired by our Students Success Stories
+            </h3>
+        )}
+        {(isTestimonialsPage || isBlogPage) && (
+            <div className="w-full flex items-center justify-between">
+                <h3 className="H3-48-120 font-[500]">
+                    Get Inspired by our Students Success Stories
+                </h3>
+                <div className="flex w-[88px] h-[32px] items-center gap-[24px] z-10">
+                    <div className="flex w-[32px] h-[32px] items-center justify-center">
+                    <Image src={'/testimonials/left-arrow.svg'} width={19} height={32} alt="left" className="w-[19px] h-[32px] cursor-pointer" />
+                    </div>
+                    <div className="flex w-[32px] h-[32px] items-center justify-center">
+                    <Image src={'/testimonials/right-arrow.svg'} width={19} height={32} alt="right" className="w-[19px] h-[32px] cursor-pointer" />
+                    </div>
+                </div>
+            </div>
+        )}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px] justify-items-center">
             <div className="relative w-full max-w-[295px] h-[400px]">
                 <div className="relative w-full h-[400px]">

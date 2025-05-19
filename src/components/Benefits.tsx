@@ -166,7 +166,7 @@ const Benefits = () => {
                     alt="play"
                     width={48}
                     height={48}
-                    className="absolute top-[40px] right-[40px] w-[48px] h-[48px]"
+                    className={`absolute top-[40px]  ${isEven ? 'right-[40px]' : 'left-[40px]'} w-[48px] h-[48px]`}
                   />
                 </div>
 

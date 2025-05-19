@@ -7,8 +7,8 @@ const Testimonials = () => {
       <div className='w-full max-w-[1360px] flex flex-col lg:flex-row gap-[40px] md:gap-[80px] lg:gap-[120px] py-[80px] px-[40px] mx-auto'>
         <h6 className='H-20 font-[600] mx-auto lg:mx-0'>TESTIMONIALS</h6>
         <div className='flex flex-col lg:flex-row gap-[40px] items-start mx-auto lg:mx-0'>
-            <div className='flex items-center justify-center'>
-            <Image src="/testimonials/quotes.svg" alt="quotes" width={100} height={100} />
+            <div className='flex items-center justify-center w-[100px] h-[100px]'>
+            <Image src="/testimonials/quotes.svg" alt="quotes" width={83} height={67} />
             </div>
             <div className='flex flex-col gap-[40px]'>
                 <div className='flex flex-col md:flex-row gap-[40px]'>
@@ -16,10 +16,9 @@ const Testimonials = () => {
                         <div className='flex gap-[4px]'>
                             {Array.from({ length: 5 }).map((_, index) => (
                                 <div key={index} className='relative w-[27px] h-[26px] p-1 bg-[#00B67A]'>
-                                <Image src='/testimonials/star.svg' alt='star' width={23} height={22} 
-                                className='invert'/>
+                                <Image src='/testimonials/star.svg' alt='star' width={23} height={22} />
                                 <Image src='/testimonials/star-style.svg' alt='star' width={5} height={3} 
-                                className='absolute top-[15px] right-2'/>
+                                className='absolute top-[15px] left-[13px]'/>
                             </div>
                             ))}
                         </div>
@@ -35,10 +34,9 @@ const Testimonials = () => {
                         <div className='flex gap-[4px]'>
                         {Array.from({ length: 5 }).map((_, index) => (
                                 <div key={index} className='relative w-[27px] h-[26px] p-1 bg-[#00B67A]'>
-                                <Image src='/testimonials/star.svg' alt='star' width={23} height={22} 
-                                className='invert'/>
+                                <Image src='/testimonials/star.svg' alt='star' width={23} height={22} />
                                 <Image src='/testimonials/star-style.svg' alt='star' width={5} height={3} 
-                                className='absolute top-[15px] right-2'/>
+                                className='absolute top-[15px] left-[13px]'/>
                             </div>
                             ))}
                         </div>
