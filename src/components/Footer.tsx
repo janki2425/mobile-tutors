@@ -72,7 +72,7 @@ const paymentMethods: (PaymentMethod | AmexPaymentMethod)[] = [
 
 const Footer = () => {
   return (
-    <div className='w-full max-w-[1440px] py-12 bg-[#F4F4F4] flex flex-col items-center justify-center mx-auto'>
+    <div className='w-full py-12 bg-[#F4F4F4] flex flex-col items-center justify-center mx-auto'>
       <div className='w-full max-w-[1360px] px-4 md:px-6 lg:px-8 mx-auto'>
         {/* Top section with logo, links and buttons */}
         <div className='flex flex-col xl:flex-row gap-8 items-center md:items-start justify-between'>

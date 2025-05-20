@@ -210,6 +210,20 @@ body {
   }
 }
 
+@media (min-width:1024px){
+  .lg\:H2-56-120{
+    font-size: var(--H2-56);
+    line-height: var(--line-height-120);
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px){
+  .md\:H4-40{
+    font-size: var(--H4-40);
+    line-height: var(--line-height-120);
+  }
+}
+
 /* Force payment method image dimensions */
 .footer-payment-method img[src$=".png"] {
   width: 38px !important;
