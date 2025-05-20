@@ -13,7 +13,7 @@ const OurCourse = () => {
         <Courses/>
         <div className='w-full flex'>
           <Button variant='default'
-          className='bg-gold max-w-[150px] text-black P-14 mx-auto rounded-[16px] font-[500] py-[8px] px-[24px]'
+          className='bg-gold max-w-[150px] text-black P-14 mx-auto rounded-[16px] font-[500] py-[8px] px-[24px] cursor-pointer'
           >EXPLORE MORE</Button>
         </div>
       </div>

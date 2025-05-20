@@ -51,8 +51,8 @@ const Testimonials = () => {
 
                 </div>
                 <div className='flex w-full max-w-[88px] justify-between'> 
-                    <Image src='/testimonials/left-arrow.svg' alt='star' width={32} height={32} />
-                    <Image src='/testimonials/right-arrow.svg' alt='star' width={32} height={32} />
+                    <Image src='/testimonials/left-arrow.svg' alt='star' width={32} height={32} className='cursor-pointer'/>
+                    <Image src='/testimonials/right-arrow.svg' alt='star' width={32} height={32} className='cursor-pointer'/>
                 </div>
             </div>
         </div>

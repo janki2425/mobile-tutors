@@ -32,7 +32,7 @@ const SuccessStory = () => {
             </div>
         )}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[16px] justify-items-center">
-            <div className="relative w-full max-w-[295px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px] cursor-pointer">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-1.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
@@ -53,7 +53,7 @@ const SuccessStory = () => {
                     </p>
                 </div>
             </div>
-            <div className="relative w-full max-w-[295px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px] cursor-pointer">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-2.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
@@ -73,7 +73,7 @@ const SuccessStory = () => {
                     </p>
                 </div>
             </div>
-            <div className="relative w-full max-w-[295px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px] cursor-pointer">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-3.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
@@ -93,7 +93,7 @@ const SuccessStory = () => {
                     </p>
                 </div>
             </div>
-            <div className="relative w-full max-w-[295px] h-[400px]">
+            <div className="relative w-full max-w-[295px] h-[400px] cursor-pointer">
                 <div className="relative w-full h-[400px]">
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-4.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>

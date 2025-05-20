@@ -64,7 +64,7 @@ const Faqs = () => {
             </div>
             <Button
                 variant='default'
-                className='bg-gold rounded-[16px] P-14 max-w-[150px] py-[8px] px-[24px]'
+                className='bg-gold rounded-[16px] P-14 max-w-[150px] py-[8px] px-[24px] cursor-pointer'
             >
                 EXPLORE MORE
             </Button>

@@ -33,14 +33,14 @@ const RelatedBlog = () => {
                     <div 
                     key={idx} 
                     onClick={() => handleBlogClick(blog.id)}
-                    className='flex flex-col gap-[24px] max-w-[660px]'>
+                    className='flex flex-col gap-[24px] max-w-[660px] cursor-pointer'>
                             <Image src={blog.image} alt={blog.title} width={660} height={400}  className='rounded-[24px] h-[400px]'/>
                             <div className='flex flex-col gap-[16px] px-4'>
                               <div className='flex flex-col gap-[16px]'>
                                   <h4 className='H4-40-120 font-[500]'>{blog.title}</h4>
                                   <p className='P-16 font-[500]'>{blog.description}</p>
                               </div>
-                              <Button variant='outline' className='py-[8px] px-[24px] w-fit P-14 rounded-[16px]'>READ MORE</Button>
+                              <Button variant='outline' className='py-[8px] px-[24px] w-fit P-14 rounded-[16px] cursor-pointer'>READ MORE</Button>
                             </div>
                     </div>
                 ))}

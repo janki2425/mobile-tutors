@@ -19,7 +19,7 @@ const Curriculum = () => {
             </div>
         </div>
         <div className='w-full flex justify-center'>
-            <Button variant='default' className='bg-white text-navy-blue P-14 font-[500] rounded-[24px] py-[8px] px-[24px]'>FULL YEAR 5/6 MATHS CURRICULUM</Button>
+            <Button variant='default' className='bg-white text-navy-blue P-14 font-[500] rounded-[24px] py-[8px] px-[24px] cursor-pointer'>FULL YEAR 5/6 MATHS CURRICULUM</Button>
         </div>
       </div>
     </div>
