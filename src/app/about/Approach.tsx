@@ -4,29 +4,29 @@ import Image from 'next/image'
 const contentList = [
     {
         id: 1,
-        title: 'Live Lessons',
+        title: '01 Lorem lipsum',
         description: "Our expert tutors deliver interactive, engaging lessons tailored to your child's needs. With real-time feedback and active support, students grasp key concepts and build confidence.",
         image: '/benefits/benefit-img-2.jpg',
     },
     {
         id: 2,
-        title: 'Workbooks',
+        title: '02 Lorem lipsum',
         description: "Our expert tutors deliver interactive, engaging lessons tailored to your child's needs. With real-time feedback and active support, students grasp key concepts and build confidence.",
         image: '/benefits/benefit-img-2.jpg',
     },
     {
         id: 3,
-        title: 'Homework',
+        title: '03 Lorem lipsum',
         description: "Our expert tutors deliver interactive, engaging lessons tailored to your child's needs. With real-time feedback and active support, students grasp key concepts and build confidence.",
         image: '/benefits/benefit-img-2.jpg',
     },
 ]
 
-const Content = () => {
+const Approach = () => {
   return (
-    <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] rounded-[60px] mx-auto">
+    <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] mx-auto rounded-[60px]">
       <div className="w-full max-w-[1360px] mx-auto py-[80px]">
-        <h3 className="H3-48-120 font-[500] text-center mb-[40px]">Course Content</h3>
+        <h3 className="H3-48-120 font-[500] text-center mb-[40px]">Our Approach</h3>
         <div className="flex flex-col gap-[40px]">
           {contentList.map((content) => {
             const isEven = content.id % 2 === 0;
@@ -67,4 +67,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Approach

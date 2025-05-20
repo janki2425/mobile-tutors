@@ -3,8 +3,13 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import Content from '../Content'
 import Pricing from '@/components/Pricing'
+import Curriculum from '@/components/Curriculum'
+import OurCourse from '@/components/OurCourse'
+import Testimonials from '@/components/Testimonials'
+import Faqs from '@/components/Faqs'
+import Contact from '@/components/Contact'
 
-const page = () => {
+const Page = () => {
   return (
     <>
     <div className='w-full max-w-[1360px] mx-auto my-[60px]'>
@@ -35,8 +40,13 @@ const page = () => {
     </div>
     <Content/>
     <Pricing/>
+    <Curriculum/>
+    <OurCourse/>
+    <Testimonials/>
+    <Faqs/>
+    <Contact/>
     </>
   )
 }
 
-export default page
+export default Page

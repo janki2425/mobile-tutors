@@ -19,7 +19,7 @@ const navItems = [
     {
         id: 2,
         name: 'ABOUT US',
-        href: '#',
+        href: '/about',
         active: false
     },
     {

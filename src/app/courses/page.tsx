@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import { Button } from '@/components/ui/button'
 import Testimonials from '@/components/Testimonials'
 import Faqs from '@/components/Faqs'
 import Contact from '@/components/Contact'
@@ -46,7 +45,7 @@ const courseData = [
     },
     
 ]
-const page = () => {
+const Page = () => {
     const [openIndex, setOpenIndex] = useState(0)
     const router = useRouter()
     const [selectedCourse, setSelectedCourse] = useState<number | null>(null)
@@ -82,4 +81,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

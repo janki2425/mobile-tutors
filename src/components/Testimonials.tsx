@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Testimonials = () => {
 
   return (
-    <div className='w-full my-[60px] bg-[#F5F5F5] rounded-[24px] '>
+    <div className='w-full max-w-[1440px] my-[60px] bg-[#F5F5F5] rounded-[24px] mx-auto'>
       <div className='w-full max-w-[1360px] flex flex-col lg:flex-row gap-[40px] md:gap-[80px] lg:gap-[120px] py-[80px] px-[40px] mx-auto'>
         <h6 className='H-20 font-[600] mx-auto lg:mx-0'>TESTIMONIALS</h6>
         <div className='flex flex-col lg:flex-row gap-[40px] items-start mx-auto lg:mx-0'>

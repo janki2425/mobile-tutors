@@ -6,6 +6,10 @@ const pathTitles: { [key: string]: { title: string; subtitle: string } } = {
     title: 'FAQs',
     subtitle: 'Home - FAQs',
   },
+  '/about': {
+    title: 'ABOUT US',
+    subtitle: 'Home - About Us',
+  },
   '/testimonials': {
     title: 'TESTIMONIALS',
     subtitle: 'Home - Testimonials',
@@ -33,6 +37,7 @@ const CommonBg = () => {
 
   let titleObj = { title: 'Welcome', subtitle: '' };
   if (pathname === '/faqs') titleObj = pathTitles['/faqs'];
+  else if (pathname === '/about') titleObj = pathTitles['/about'];
   else if (pathname === '/testimonials') titleObj = pathTitles['/testimonials'];
   else if (pathname === '/blogs') titleObj = pathTitles['/blogs'];
   else if (pathname.startsWith('/blogs/')) titleObj = pathTitles['/blogs/[id]'];

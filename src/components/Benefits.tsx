@@ -138,10 +138,10 @@ const benefitList = [
 
 const Benefits = () => {
   return (
-    <div className="w-full bg-[#F5F5F5] my-[80px] rounded-[60px]">
+    <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] rounded-[60px] mx-auto">
       <div className="w-full max-w-[1360px] mx-auto py-[80px]">
         <h3 className="H3-48-120 font-[500] text-center mb-[40px]">Our Benefits</h3>
-        <div className="flex flex-col gap-[40px] px-4">
+        <div className="flex flex-col gap-[40px]">
           {benefitList.map((benefit) => {
             const isEven = benefit.id % 2 === 0;
 
