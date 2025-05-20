@@ -8,15 +8,15 @@ const Mission = () => {
         <div className='w-full max-w-[638px] flex flex-col gap-[24px] justify-center'>
             <div className='flex flex-col gap-[16px]'>
                 <h4 className='H4-40-120 font-[500]'>Our Mission</h4>
-                <p className='P-16 font-[500]'>We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
+                <p className='P-16 font-[500]'>We assess your child&apos;s strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
             </div>
             <div className='flex flex-col gap-[16px]'>
                 <h3 className='H-24 font-[600]'>Our Vision</h3>
-                <p className='P-16 font-[500]'>We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
+                <p className='P-16 font-[500]'>We assess your child&apos;s strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
             </div>
             <div className='flex flex-col gap-[16px]'>
                 <h3 className='H-24 font-[600]'>Our Values</h3>
-                <p className='P-16 font-[500]'>We assess your child's strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
+                <p className='P-16 font-[500]'>We assess your child&apos;s strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
             </div>
         </div>
         <div className='w-full'>
