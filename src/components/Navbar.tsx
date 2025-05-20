@@ -19,13 +19,13 @@ const navItems = [
     {
         id: 2,
         name: 'ABOUT US',
-        href: '#',
+        href: '/about',
         active: false
     },
     {
         id: 3,
         name: 'COURSES',
-        href: '/#courses',
+        href: '/courses',
         active: false
     },
     {

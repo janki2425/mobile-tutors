@@ -7,7 +7,7 @@ const HeroCommon = ({ children }: { children: ReactNode }) => {
       <div className='flex-1 w-full'>
         {children}
       </div>
-      <div className='hidden cs:block flex-shrink-0 w-auto mt-0 mx-0 py-[80px]'>
+      <div className='hidden cs:block flex-shrink-0 w-auto mt-0 mx-0 py-[80px] mr-[80px]'>
         <Image 
           src={'/Hero/banner.jpg'} 
           alt='hero' 
