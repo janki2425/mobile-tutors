@@ -17,7 +17,7 @@ const Video = () => {
         alt="video-play" 
         width={60} 
         height={60} 
-        className='mx-auto'
+        className='mx-auto cursor-pointer'
         />
       </div>
     </div>

@@ -33,7 +33,7 @@ const Blogs = () => {
       <div className='flex flex-col gap-[40px]'>
         <div className='flex flex-wrap items-center px-4'>
             {blogCategory.map((category, idx) => (
-                <div key={idx} className='py-[10px]'>
+                <div key={idx} className='py-[10px] cursor-pointer'>
                 <div className={`flex justify-between items-center py-[6px] px-[24px] cursor-pointer rounded-[16px] ${openIndex === idx ? 'bg-gold' : ''}`} onClick={() => handleToggle(idx)}>
                     <h6 className='H-24 font-[600]'>{category}</h6>
                 </div>
@@ -51,7 +51,7 @@ const Blogs = () => {
                             <h4 className='H4-40-120 font-[500]'>{blog.title}</h4>
                             <p className='P-16 font-[500]'>{blog.description}</p>
                         </div>
-                        <Button variant='outline' className='py-[8px] px-[24px] w-fit P-14 rounded-[16px]'>READ MORE</Button>
+                        <Button variant='outline' className='py-[8px] px-[24px] w-fit P-14 rounded-[16px] cursor-pointer'>READ MORE</Button>
                 </div>
             ))}
         </div>

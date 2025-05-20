@@ -45,7 +45,7 @@ const Contact = () => {
               />
               <Button
                 variant='default'
-                className='bg-black text-white rounded-[16px] P-14 font-[500] py-[12px] px-[24px]'
+                className='bg-black text-white rounded-[16px] P-14 font-[500] py-[12px] px-[24px] cursor-pointer'
               >
                 SUBMIT
               </Button>
