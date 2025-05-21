@@ -5,9 +5,13 @@
   --background: #ffffff;
   --foreground: #171717;
   --black: #000000;
+  --black-hover: #000000/80;
   --white: #ffffff;
+  --white-hover: #ffffff/80;
   --navy-blue: #1D1A63;
+  --navy-blue-hover: #1D1A63/80;
   --gold: #DCB731;
+  --gold-hover: #DCB731/80;
   --H-74: 74px;
   --H1-64: 64px;
   --H2-56: 56px;
@@ -165,17 +169,38 @@ body {
 .bg-navy-blue {
   background-color: var(--navy-blue);
 }
+button.bg-navy-blue:hover,
+  [data-slot="button"].bg-navy-blue:hover {
+    background-color: #060f52;
+    transition: all 0.3s ease;
+  }
 
 .bg-gold {
   background-color: var(--gold);
+}
+button.bg-gold:hover,
+  [data-slot="button"].bg-gold:hover {
+    background-color: #bea215;
+    transition: all 0.3s ease;
 }
 
 .bg-white {
   background-color: var(--white);
 }
+button.bg-white:hover,
+  [data-slot="button"].bg-white:hover {
+    background-color: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
 
 .bg-black {
   background-color: var(--black);
+}
+button.bg-black:hover,
+  [data-slot="button"].bg-black:hover {
+    background-color: #191919;
+    transition: all 0.3s ease;
 }
 
 .border-gold {

@@ -54,7 +54,7 @@ const FaqsPage = () => {
                 </div>
               </div>
               {openIndex === idx && faq.answer && (
-                <div className='font-[500] P-16'>
+                <div className='font-[500] P-16 pb-[16px]'>
                   {faq.answer}
                 </div>
               )}

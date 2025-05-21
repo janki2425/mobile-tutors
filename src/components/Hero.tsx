@@ -47,12 +47,13 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="w-full flex flex-col sm:flex-row items-center gap-[16px] sm:gap-[48px] z-10 md:justify-start">
-              <div 
+              <Button 
+                variant="default"
                 className="bg-gold text-black P-16 font-[500] rounded-[16px] px-[24px] py-[12px] cursor-pointer"
                 onClick={handleEnrollNow}
               >
                 ENROLL NOW
-              </div>
+              </Button>
 
               <Button variant="default" className="flex items-center gap-[8px] bg-white text-black rounded-[16px] px-[24px] py-[12px] cursor-pointer h-auto">
                 <div className="relative w-[23px] h-[22px] flex items-center justify-center">
