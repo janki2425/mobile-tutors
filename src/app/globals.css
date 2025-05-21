@@ -29,6 +29,14 @@
   --line-height-130: 130%;
   --line-height-140: 140%;
   --line-height-150: 150%;
+  --sidebar: hsl(0 0% 98%);
+  --sidebar-foreground: hsl(240 5.3% 26.1%);
+  --sidebar-primary: hsl(240 5.9% 10%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
 
 @theme inline {
@@ -129,7 +137,6 @@ body {
   line-height: var(--line-height-120);
 }
 
-
 .P-10 {
   font-size: var(--P-10);
   line-height: var(--line-height-140);
@@ -193,7 +200,6 @@ button.bg-white:hover,
     transition: all 0.3s ease;
 }
 
-
 .bg-black {
   background-color: var(--black);
 }
@@ -222,7 +228,6 @@ button.bg-black:hover,
     max-width: 660px;
   }
 }
-
 
 @media (min-width: 1280px) {
   .cs\:block {
@@ -261,5 +266,3 @@ button.bg-black:hover,
   aspect-ratio: 38 / 24 !important;
   display: block;
 }
-
-

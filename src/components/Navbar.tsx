@@ -57,6 +57,7 @@ const navItems = [
 
 const Navbar = () => {
     const [items, setItems] = useState(navItems)
+    const [sheetOpen, setSheetOpen] = useState(false)
 
     const handleActive = (id: number) => {
         setItems(items.map(item => ({
@@ -77,10 +78,19 @@ const Navbar = () => {
             <div className='hidden cs:block'>
                 <ul className='flex gap-[8px] items-center P-14 text-black font-[600]'>
                     {items.map((item) => (
-                        <li key={item.id} 
-                        onClick={() => handleActive(item.id)}
-                        className={`px-[24px] py-[6px] rounded-[100px] cursor-pointer ${item.active ? 'border-[1px] border-black' : ''}`}>
-                            <Link href={item.href} >{item.name}</Link>
+                        <li 
+                        key={item.id} 
+                        onClick={() => {
+                            handleActive(item.id);
+                            setSheetOpen(false);
+                          }}
+                        className='cursor-pointer'>
+                        <Link 
+                            href={item.href}
+                            className={`P-14 px-[24px] py-[6px] rounded-[50px] text-black font-[600] ${item.active ? 'border-[1px] border-black' : ''}`}
+                        >
+                            {item.name}
+                        </Link>
                         </li>
                     ))}
                 </ul>
@@ -107,16 +117,25 @@ const Navbar = () => {
                         <div className="flex flex-col gap-6 mt-6 px-4">
                             <ul className='flex flex-col gap-4 P-14 text-black font-[500]'>
                             {items.map((item) => (
-                                <li key={item.id} 
-                                onClick={() => handleActive(item.id)}
-                                className={`px-[24px] py-[6px] rounded-[100px] cursor-pointer ${item.active ? 'border-[1px] border-black' : ''}`}>
-                                    <Link href={item.href} >{item.name}</Link>
+                                <li 
+                                key={item.id} 
+                                onClick={() => {
+                                    handleActive(item.id);
+                                    setSheetOpen(false);
+                                  }}
+                                className='w-full cursor-pointer'>
+                                <Link 
+                                    href={item.href}
+                                    className={`block w-full P-14 px-[24px] py-[6px] rounded-[50px] text-black font-[600] ${item.active ? 'border-[1px] border-black' : ''}`}
+                                >
+                                    {item.name}
+                                </Link>
                                 </li>
                             ))}
                             </ul>
                             <div className='flex flex-col gap-4'>
-                                <Button variant="navy" className='rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
-                                <Button variant="outline" className='rounded-[16px] w-full'>LOGIN</Button>
+                                <Button variant="default" className='bg-navy-blue text-white rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
+                                <Button variant="outline" className='rounded-[16px] px-[24px] py-[16px] w-full'>LOGIN</Button>
                             </div>
                         </div>
                     </SheetContent>
