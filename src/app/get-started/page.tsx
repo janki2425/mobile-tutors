@@ -4,15 +4,18 @@ import React, { useState } from 'react'
 import HeroCommon from '../../components/HeroCommon'
 import { Button } from '../../components/ui/button'
 import Pricing from '../../components/Pricing'
+import { useRouter } from 'next/navigation'
 
 const Enroll = () => {
+  const router = useRouter()
     const [enrollNow, setEnrollNow] = useState(false)
     const [step, setStep] = useState(1)
   
   const handleContinue = () => setStep(step + 1)
   const handleBack = () => {
     if (step === 1) {
-      setEnrollNow(false)   
+      setEnrollNow(false)
+      router.push('/')
       setStep(1)
     } else {
       setStep(step - 1)

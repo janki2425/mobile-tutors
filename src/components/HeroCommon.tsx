@@ -10,7 +10,7 @@ const HeroCommon = ({ children, hideImage = false }: { children: ReactNode, hide
       {!hideImage && (
         <div className='hidden cs:block flex-shrink-0 w-auto mt-0 mx-0 py-[80px] mr-[80px]'>
           <Image 
-            src={'/Hero/banner.jpg'} 
+            src={'/Hero/banner.jpg'}
             alt='hero' 
             width={500} 
             height={400} 

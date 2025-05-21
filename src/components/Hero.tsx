@@ -2,17 +2,15 @@
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-import HeroCommon from './HeroCommon'
-import Pricing from './Pricing'
-import Enroll from '../app/get-started/page'
-
+import { useRouter } from 'next/navigation'
 
 const Hero = () => {
+  const router = useRouter()
   const [enrollNow, setEnrollNow] = useState(false)
 
   const handleEnrollNow = () => {
-
-  }
+    router.push('/get-started')
+}
   return (
     <>
     <div className="w-full h-[620px]">
