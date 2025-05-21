@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/sheet"
 import {  Menu } from "lucide-react"
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 const navItems = [
     {
@@ -53,9 +54,11 @@ const navItems = [
         active: false
     },
     
+    
 ]   
 
 const Navbar = () => {
+    const router = useRouter()
     const [items, setItems] = useState(navItems)
     const [sheetOpen, setSheetOpen] = useState(false)
 
@@ -64,6 +67,9 @@ const Navbar = () => {
             ...item,
             active: item.id === id
         })))
+    }
+    const handleEnrollNow = () => {
+        router.push('/get-started')
     }
 
   return (
@@ -98,7 +104,10 @@ const Navbar = () => {
 
             {/* Desktop Buttons */}
             <div className='hidden cs:flex gap-[16px] items-center P-14 text-black font-[500]'>
-                <Button variant="default" className='bg-navy-blue text-white rounded-[16px] px-[24px] py-[8px] cursor-pointer'>GET STARTED</Button>
+                <Button 
+                onClick={handleEnrollNow}
+                variant="default" 
+                className='bg-navy-blue text-white rounded-[16px] px-[24px] py-[8px] cursor-pointer'>GET STARTED</Button>
                 <Button variant="outline" className='rounded-[16px] py-[8px] px-[24px] cursor-pointer'>LOGIN</Button>
             </div>
 

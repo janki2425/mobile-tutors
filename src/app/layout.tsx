@@ -24,9 +24,9 @@ export default function RootLayout({
         className={`${dmSans.variable} antialiased`}
       >
         <Navbar/>
-        {pathname !== '/' && <CommonBg/>}
+        {pathname !== '/' && pathname !== '/get-started' && <CommonBg/>}
         {children}
-        <Footer/>
+        {pathname !== '/get-started' && <Footer/>}
       </body>
     </html>
   );
