@@ -138,7 +138,7 @@ const benefitList = [
 
 const Benefits = () => {
   return (
-    <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] rounded-[60px] mx-auto">
+    <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] rounded-[60px] mx-auto px-2 md:px-4 xxl:px-0">
       <div className="w-full max-w-[1360px] mx-auto py-[80px]">
         <h3 className="H3-48-120 font-[500] text-center mb-[40px]">Our Benefits</h3>
         <div className="flex flex-col gap-[40px]">
@@ -150,7 +150,7 @@ const Benefits = () => {
                 key={benefit.id}
                 className={`w-full flex flex-col ${
                   isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'
-                } gap-[24px] lg:gap-[60px] items-center border border-[#E0E0E0] lg:border-none p-2 lg:p-0 rounded-[24px]`}
+                } gap-[24px] lg:gap-[60px] items-center p-2 lg:p-0 rounded-[24px]`}
               >
                 {/* Image Section */}
                 <div className="relative w-full lg:w-1/2">

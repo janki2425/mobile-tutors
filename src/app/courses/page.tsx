@@ -57,7 +57,7 @@ const Page = () => {
 
   return (
     <>
-    <div className='w-full max-w-[1360px] mx-auto my-[60px]'>
+    <div className='w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0'>
       <div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-[60px]'>
             {courseData.map((course, idx) => (

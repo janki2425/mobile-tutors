@@ -3,7 +3,7 @@ import { Button } from './ui/button'
 
 const Contact = () => {
   return (
-    <div className='max-w-[1360px] mx-auto my-8 sm:my-12 md:my-16 lg:my-[60px]'>
+    <div className='max-w-[1360px] mx-auto my-8 sm:my-12 md:my-16 lg:my-[60px] px-2 md:px-4 xxl:px-0'>
       <div className='flex flex-col lg:flex-row items-center lg:items-end'>
         {/* Image Section - Responsive height and width */} 
         <div className='relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[599px] lg:max-w-[760px]'>

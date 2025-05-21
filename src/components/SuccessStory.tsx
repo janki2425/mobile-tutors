@@ -9,7 +9,7 @@ const SuccessStory = () => {
   const isTestimonialsPage = pathname === '/testimonials';
   const isBlogPage = pathname === '/blogs';
   return (
-    <div className="w-full max-w-[1360px] mx-auto my-[60px]">
+    <div className="w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0">
       <div className="flex flex-col gap-[40px]">
         {isHomePage && (
             <h3 className="H3-48-120 font-[500] max-w-[800px] mx-auto text-center">

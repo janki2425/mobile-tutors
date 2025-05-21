@@ -24,7 +24,7 @@ const contentList = [
 
 const Approach = () => {
   return (
-    <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] mx-auto rounded-[60px]">
+    <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] mx-auto rounded-[60px] px-2 md:px-4 xxl:px-0">
       <div className="w-full max-w-[1360px] mx-auto py-[80px]">
         <h3 className="H3-48-120 font-[500] text-center mb-[40px]">Our Approach</h3>
         <div className="flex flex-col gap-[40px]">

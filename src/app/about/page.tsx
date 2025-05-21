@@ -17,7 +17,7 @@ const Page = () => {
       <Mission/>
       <Approach/>
       <Testimonials/>
-      <div className='w-full max-w-[1360px] mx-auto'>
+      <div className='w-full max-w-[1360px] mx-auto px-2 md:px-4 xxl:px-0'>
         <div className='flex flex-col gap-[40px]'>
             <div className='flex flex-col max-w-[800px] mx-auto gap-[24px]'>
             <h3 className='H3-48-120 font-[500] text-center'>Choose Your Subject</h3>

@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 import Courses from './Courses'
 const OurCourse = () => {
   return (
-    <div id='courses' className='w-full max-w-[1360px] mx-auto mt-[60px] mb-[77px]'>
+    <div id='courses' className='w-full max-w-[1360px] mx-auto mt-[60px] mb-[77px] px-2 md:px-4 xxl:px-0'>
       <div className='flex flex-col gap-[40px]'>
         <div className='flex flex-col gap-[24px] max-w-[800px] mx-auto px-4'>
             <h3 className='H3-48-120 font-[500] text-center'>Our Courses</h3>

@@ -25,7 +25,7 @@ const FaqsPage = () => {
   }
 
   return (
-    <div className='w-full max-w-[1360px] mx-auto my-[60px]'>
+    <div className='w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0'>
       <div className='flex flex-col gap-[24px]'>
         <div className='flex flex-wrap items-center'>
           {faqCategory.map((category) => (

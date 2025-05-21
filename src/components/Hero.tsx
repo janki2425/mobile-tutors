@@ -21,15 +21,15 @@ const Hero = () => {
 
         <div className="relative w-full h-[620px]">
           {/* Hero Content */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+          <div className="absolute top-3/7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                           w-[90%] max-w-[1360px] flex flex-col items-center gap-[24px] 
                           md:left-[60px] md:translate-x-0 md:items-start z-10">
             {/* Heading + Subtext */}
             <div className="w-full flex flex-col gap-[16px]">
-              <h1 className="text-white H1-64 font-[700] text-center md:text-left">
+              <h1 className="text-white H4-40 md:H1-64 font-[700] text-center md:text-left">
                 Trusted by Parents. <br /> Proven by Results.
               </h1>
-              <p className="text-white text-base P-18 text-center md:text-left">
+              <p className="text-white P-16 md:P-18 text-center md:text-left">
                 Expert Tuition for KS3, GCSE & A-Level Success
               </p>
             </div>

@@ -7,7 +7,7 @@ const blog = () => {
     
     return (
         <>
-        <div className='w-full max-w-[1360px] mx-auto py-[60px]'>
+        <div className='w-full max-w-[1360px] mx-auto py-[60px] px-2 md:px-4 xxl:px-0'>
            <div className='w-full flex flex-col gap-[40px]'>
                 <div className='flex flex-col gap-[16px]'>
                     <div className='flex flex-wrap justify-between gap-[10px]'>

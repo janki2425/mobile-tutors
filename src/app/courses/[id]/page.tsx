@@ -12,7 +12,7 @@ import Contact from '@/components/Contact'
 const Page = () => {
   return (
     <>
-    <div className='w-full max-w-[1360px] mx-auto my-[60px]'>
+    <div className='w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0'>
       <div className='flex flex-col-reverse lg:flex-row items-center justify-between gap-[32px]'>
         <div className='flex flex-col w-full max-w-[700px] gap-[24px]'>
           <div className='flex flex-col gap-[16px]'>

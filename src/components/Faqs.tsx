@@ -34,7 +34,7 @@ const Faqs = () => {
   }
 
   return (
-    <div className='max-w-[1360px] flex flex-col lg:flex-row mx-auto my-[60px]'>
+    <div className='max-w-[1360px] flex flex-col lg:flex-row mx-auto my-[60px] px-2 md:px-4 xxl:px-0'>
         <div className='flex flex-col w-full p-[40px] mx-auto gap-[24px]'>
             <h3 className='font-[500] H3-48-120'>FAQs</h3>
             <div className='lg:hidden block my-auto mx-auto'>

@@ -29,9 +29,9 @@ const Blogs = () => {
     }
   return (
     <>
-    <div className='w-full max-w-[1360px] mx-auto my-[60px]'>
+    <div className='w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0'>
       <div className='flex flex-col gap-[40px]'>
-        <div className='flex flex-wrap items-center px-4'>
+        <div className='flex flex-wrap items-center'>
             {blogCategory.map((category, idx) => (
                 <div key={idx} className='py-[10px] cursor-pointer'>
                 <div className={`flex justify-between items-center py-[6px] px-[24px] cursor-pointer rounded-[16px] ${openIndex === idx ? 'bg-gold' : ''}`} onClick={() => handleToggle(idx)}>

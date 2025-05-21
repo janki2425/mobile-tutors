@@ -3,7 +3,7 @@ import React from 'react'
 
 const PostComment = () => {
   return (
-    <div className='w-full max-w-[1440px] bg-gold mx-auto rounded-[60px] my-[60px]'>
+    <div className='w-full max-w-[1440px] bg-gold mx-auto rounded-[60px] my-[60px] px-2 md:px-4 xxl:px-0'>
       <div className='flex flex-col md:flex-row gap-[40px] px-[40px] py-[60px]'>
         <div className='flex flex-col gap-[24px] max-w-[660px]'>
             <h3 className='H3-48-120 font-[500]'>Post Comment</h3>

@@ -34,7 +34,7 @@ const Pricing = () => {
         {isCoursePage && (
             <h2 className='H2-56-120 font-[500] text-center mt-[20px] mb-[40px]'>Pricing</h2>
         )}
-      <div className='flex flex-col lg:flex-row w-full gap-6 md:gap-[40px] mx-auto'>
+      <div className='flex flex-col lg:flex-row w-full gap-6 md:gap-[40px] mx-auto px-2 md:px-4 xxl:px-0'>
         <div className={`flex flex-col w-full ${isHomePage ? 'lg:max-w-[555px]' : 'lg:max-w-[650px]'} bg-gold rounded-[16px] p-4 md:p-[40px] gap-4 md:gap-[16px]`}>
             <div className='w-full h-full flex  justify-between items-center'>
             <h5 className='H5-24 font-[600]'>Launch GCSE</h5>

@@ -218,6 +218,14 @@ button.bg-black:hover,
     display: none;
   }
 }
+
+@media (min-width: 1440px) {
+  .xxl\:px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (min-width: 1279px) {
   .cs\:flex-row {
     display: flex;
@@ -271,6 +279,18 @@ button.bg-black:hover,
     transform: translateX(-50%);
   }
 }
+
+@media (min-width:768px) {
+  .md\:H1-64{
+    font-size: var(--H1-64);
+    line-height: var(--line-height-120);
+  }
+  .md\:P-18{
+    font-size: var(--P-18);
+    line-height: var(--line-height-150);
+  }
+}
+
 
 
 /* Force payment method image dimensions */
