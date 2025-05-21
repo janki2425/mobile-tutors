@@ -73,7 +73,7 @@ const Enroll = () => {
                 <h4 className="P-16 font-[500] mb-2">Step {step}/3</h4>
               </div>
               <div className='flex flex-col gap-[8px] mb-[12px]'>
-                <h4 className="H4-40-120 font-[500]">Which subject would you like to study?</h4>
+                <h4 className="H4-40-120 font-[500]">Which subjects would you like to study?</h4>
                 <p className="P-16 font-[500]">Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
               </div>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[24px] H-6 font-[600]'>

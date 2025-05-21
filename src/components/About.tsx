@@ -9,7 +9,7 @@ const About = () => {
             The most effective, engaging, and affordable online learning platform
             </h3>
             <p className='P-16 font-[500] text-center xl:text-left'>John Stephen, CEO</p>
-            <div className='w-full max-w-[1142px] flex flex-wrap gap-[72px] justify-center'>
+            <div className='w-full max-w-[1142px] mx-auto flex flex-wrap gap-[72px] justify-center'>
                 <div className='max-w-[231px] flex flex-col gap-[16px] bg-gold rounded-[24px] p-[24px]'>
                     <h2 className='H-74 font-[500]'>70+</h2>
                     <div className='flex flex-col gap-[8px]'>
