@@ -26,7 +26,7 @@ const Hero = () => {
                           md:left-[60px] md:translate-x-0 md:items-start z-10">
             {/* Heading + Subtext */}
             <div className="w-full flex flex-col gap-[16px]">
-              <h1 className="text-white H4-40 md:H1-64 font-[700] text-center md:text-left">
+              <h1 className="text-white H4-40 md:H1-64-120 font-[700] text-center md:text-left">
                 Trusted by Parents. <br /> Proven by Results.
               </h1>
               <p className="text-white P-16 md:P-18 text-center md:text-left">

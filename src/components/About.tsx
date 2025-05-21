@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className='w-full max-w-[1360px] mx-auto my-[80px] px-2 md:px-4 xxl:px-0'>
         <div className='w-full flex flex-col gap-[40px]'>
-            <h3 className='text-center max-w-[800px] xl:text-start mx-auto xl:mx-0 px-4 xl:px-0 font-[500] H3-48-120'>
+            <h3 className='text-center max-w-[800px] xl:text-start mx-auto xl:mx-0 px-4 xl:px-0 font-[500] text-[24px] md:text-[32px] lg:H3-48-120'>
             Hi! We are Mobile Tutors
             The most effective, engaging, and affordable online learning platform
             </h3>

@@ -12,13 +12,13 @@ const SuccessStory = () => {
     <div className="w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0">
       <div className="flex flex-col gap-[40px]">
         {isHomePage && (
-            <h3 className="H3-48-120 font-[500] max-w-[800px] mx-auto text-center">
+            <h3 className="text-[24px] lg:H3-48-120 font-[500] max-w-[800px] mx-auto text-center">
                 Get Inspired by our Students Success Stories
             </h3>
         )}
         {(isTestimonialsPage || isBlogPage) && (
             <div className="w-full flex items-center justify-between">
-                <h3 className="H3-48-120 font-[500]">
+                <h3 className="text-[24px] lg:H3-48-120 font-[500]">
                     Get Inspired by our Students Success Stories
                 </h3>
                 <div className="flex w-[88px] h-[32px] items-center gap-[24px] z-10">

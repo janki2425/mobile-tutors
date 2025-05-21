@@ -59,8 +59,8 @@ const Testimonials = () => {
 
   return (
     <div className='w-full max-w-[1440px] my-[60px] bg-[#F5F5F5] rounded-[24px] mx-auto px-2 md:px-4 xxl:px-0'>
-      <div className='w-full max-w-[1360px] flex flex-col lg:flex-row gap-[40px] md:gap-[80px] lg:gap-[120px] py-[80px] mx-auto'>
-        <h6 className='H-20 font-[600] mx-auto lg:mx-0'>TESTIMONIALS</h6>
+      <div className='w-full max-w-[1360px] flex flex-col lg:flex-row gap-[40px] md:gap-[80px] lg:gap-[120px] py-[20px] lg:py-[80px] mx-auto'>
+        <h6 className='text-[28px] lg:H^-20 font-[600] mx-auto lg:mx-0'>TESTIMONIALS</h6>
         <div className='flex flex-col lg:flex-row gap-[40px] items-start mx-auto lg:mx-0'>
             <div className='flex items-center justify-center w-[100px] h-[100px]'>
             <Image src="/testimonials/quotes.svg" alt="quotes" width={83} height={67} 
