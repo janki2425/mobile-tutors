@@ -240,6 +240,13 @@ button.bg-black:hover,
   }
 }
 
+@media (min-width:768px){
+  .md\:flex-row{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 @media (min-width:1024px){
   .lg\:H2-56-120{
     font-size: var(--H2-56);
@@ -253,6 +260,18 @@ button.bg-black:hover,
     line-height: var(--line-height-120);
   }
 }
+
+@media (max-width:767px) {
+  .transition-testimonials{
+    transform: translateY(-50%);
+  }
+}
+@media (min-width:768px) {
+  .md\:transition-testimonials{
+    transform: translateX(-50%);
+  }
+}
+
 
 /* Force payment method image dimensions */
 .footer-payment-method img[src$=".png"] {
