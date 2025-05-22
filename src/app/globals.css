@@ -92,6 +92,11 @@ body {
   line-height: var(--line-height-140);
 }
 
+.H5-32-120 {
+  font-size: var(--H5-32);
+  line-height: var(--line-height-120);
+}
+
 .H4-40 {
   font-size: var(--H4-40);
   line-height: var(--line-height-140);
@@ -347,6 +352,7 @@ button.bg-black:hover,
 
 /* Large devices (min-width: 1024px) */
 @media (min-width:1024px) {
+  .lg\:H-74      {font-size: var(--H1-64); line-height: var(--line-height-120);}
   .lg\:H1-64-120 { font-size: var(--H1-64); line-height: var(--line-height-120);}
   .lg\:H2-56-120 { font-size: var(--H2-56); line-height: var(--line-height-120);}
   .lg\:H3-48-120 { font-size: var(--H3-48); line-height: var(--line-height-120);}
@@ -354,6 +360,7 @@ button.bg-black:hover,
   .lg\:H5-32     { font-size: var(--H5-32); line-height: var(--line-height-140);}
   .lg\:H6-20-120 { font-size: var(--H6-20); line-height: var(--line-height-120);}
   .lg\:H-24-120  { font-size: var(--H-24); line-height: var(--line-height-120);}
+  .lg\:H-24  { font-size: var(--H-24); line-height: var(--line-height-140);}
   .lg\:H6-20      { font-size: var(--H-20); line-height: var(--line-height-120);}
   .lg\:P-20      { font-size: var(--P-20); line-height: var(--line-height-140);}
   .lg\:P-18      { font-size: var(--P-18); line-height: var(--line-height-140);}
@@ -376,12 +383,14 @@ button.bg-black:hover,
 
 /* 2XL devices (min-width: 1536px) */
 @media (min-width:1446px) {
+  .xl\:H-74      {font-size: var(--H1-64); line-height: var(--line-height-120);}
   .xl\:H1-64-120 { font-size: var(--H1-64); line-height: var(--line-height-120);}
   .xl\:H2-56-120 { font-size: var(--H2-56); line-height: var(--line-height-120);}
   .xl\:H3-48-120 { font-size: var(--H3-48); line-height: var(--line-height-120);}
   .xl\:H4-40-120 { font-size: var(--H4-40); line-height: var(--line-height-120);}
   .xl\:H5-32     { font-size: var(--H5-32); line-height: var(--line-height-140);}
   .xl\:H6-20-120 { font-size: var(--H6-20); line-height: var(--line-height-120);}
+  .xl\:H6-20 { font-size: var(--H6-20); line-height: var(--line-height-140);}
   .xl\:H-24-120  { font-size: var(--H-24); line-height: var(--line-height-120);}
   .xl\:P-20      { font-size: var(--P-20); line-height: var(--line-height-140);}
   .xl\:P-18      { font-size: var(--P-18); line-height: var(--line-height-140);}

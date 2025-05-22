@@ -23,7 +23,7 @@ const Hero = () => {
           {/* Hero Content */}
           <div className="absolute top-3/7 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
                           w-[90%] max-w-[1360px] flex flex-col items-center gap-[24px] 
-                          md:left-[60px] md:translate-x-0 md:items-start z-10">
+                          md:left-[60px] md:translate-x-0 md:items-start z-10 transition-all duration-300">
             {/* Heading + Subtext */}
             <div className="w-full flex flex-col gap-[16px]">
               <h1 className="text-white H4-40 md:H1-64-120 font-[700] text-center md:text-left">

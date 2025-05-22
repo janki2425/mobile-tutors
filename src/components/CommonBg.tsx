@@ -50,9 +50,9 @@ const CommonBg = () => {
       <div className="absolute inset-0 bg-[url('/Hero/banner.jpg')] bg-cover bg-center bg-no-repeat" />
       <div className="absolute inset-0 bg-black/[24%]" />
       {/* Centered text */}
-      <div className="absolute flex flex-col gap-[16px] top-[180px] left-[20px] md:left-[60px] z-10 h-full">
-        <h1 className="text-white text-[40px] md:H1-64-120 font-[700] drop-shadow-lg py-1">{titleObj.title}</h1>
-        <p className="text-white P-18 font-[500] drop-shadow-lg">{titleObj.subtitle}</p>
+      <div className="absolute flex flex-col gap-[8px] lg:gap-[16px] top-[180px] left-[20px] md:left-[60px] z-10 h-full transition-all duration-300">
+        <h1 className="text-white text-[32px] md:H1-64-120 font-[700] drop-shadow-lg">{titleObj.title}</h1>
+        <p className="text-white P-14 lg:P-18 font-[500] drop-shadow-lg">{titleObj.subtitle}</p>
       </div>
     </div>
   );

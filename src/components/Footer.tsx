@@ -89,7 +89,7 @@ const Footer = () => {
           
           {/* Links section */}
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-24 items-start justify-between'>
-            <div className='flex md:flex-row flex-wrap gap-8 md:gap-12 xl:gap-28 items-start'>
+            <div className='flex md:flex-row flex-wrap gap-8 md:gap-12 xl:gap-28 items-start transition-all duration-300'>
                 <div className='flex flex-col gap-4'>
                     <h6 className='text-black font-[600] H6-20'>Quick Links</h6>
                     <ul className='flex flex-col gap-2 text-black font-[500] P-14'>

@@ -58,16 +58,16 @@ const Page = () => {
   return (
     <>
     <div className='w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0'>
-      <div>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-[60px]'>
+      <div className='w-full mx-auto'>
+      <div className='flex flex-wrap justify-items-center gap-[20px] md:gap-[40px] lg:gap-[60px] transition-all duration-300'>
             {courseData.map((course, idx) => (
-                <div key={idx} className='w-full max-w-[413px] cursor-pointer' onClick={() => handleCourseClick(course.id)}>
-                    <Image src={course.image} alt={course.title} width={413} height={300} className="rounded-t-[24px] w-full h-[300px] object-cover" />
+                <div key={idx} className='w-full max-w-[250px] md:max-w-[280px] lg:max-w-[387px] transition-all duration-300 mx-auto cursor-pointer' onClick={() => handleCourseClick(course.id)}>
+                    <Image src={course.image} alt={course.title} width={413} height={300} className="rounded-t-[24px] h-[180px] md:h-[220px] lg:h-[300px] object-cover transition-all duration-300" />
                     <div className={`flex flex-col w-full ${course.id === 1 || course.id === 5 ? 'bg-navy-blue text-white' : 
                         course.id === 2 || course.id === 4 ? 'bg-black text-white' : 'bg-gold text-black'
-                    } gap-[8px] text-start px-[24px] py-[21px] rounded-b-[24px]`}>
-                        <p className='P-20 font-[500]'>{course.title}</p>
-                        <p className='P-16 font-[500] text-start'>{course.description}</p>
+                    } gap-[4px] lg:gap-[8px] text-start px-[24px] py-[12px] lg:py-[21px] rounded-b-[24px] transition-all duration-300`}>
+                        <p className='P-18 lg:P-20 font-[500]'>{course.title}</p>
+                        <p className='P-12 lg:P-16 font-[500] text-start'>{course.description}</p>
                     </div>
                 </div>
             ))}

@@ -14,7 +14,7 @@ const HeroCommon = ({ children, hideImage = false }: { children: ReactNode, hide
             alt='hero' 
             width={500} 
             height={400} 
-            className='rounded-[16px] object-cover max-w-[500px] lg:max-w-[610px] h-auto lg:w-[610px] lg:h-[740px] object-[20%_center]'
+            className='rounded-[16px] object-cover max-w-[500px] lg:max-w-[610px] h-auto lg:w-[610px] lg:h-[740px] object-[20%_center] transition-all duration-300'
           />
         </div>
       )}

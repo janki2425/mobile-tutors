@@ -58,16 +58,16 @@ const Testimonials = () => {
   }
 
   return (
-    <div className='w-full max-w-[1440px] my-[60px] bg-[#F5F5F5] rounded-[24px] mx-auto px-2 md:px-4 xxl:px-0'>
-      <div className='w-full max-w-[1360px] flex flex-col lg:flex-row gap-[40px] md:gap-[80px] lg:gap-[120px] py-[20px] lg:py-[80px] mx-auto'>
-        <h6 className='text-[28px] lg:H^-20 font-[600] mx-auto lg:mx-0'>TESTIMONIALS</h6>
-        <div className='flex flex-col lg:flex-row gap-[40px] items-start mx-auto lg:mx-0'>
-            <div className='flex items-center justify-center w-[100px] h-[100px]'>
+    <div className='w-full max-w-[1440px] my-[60px] bg-[#F5F5F5] rounded-[24px] mx-auto'>
+      <div className='w-full max-w-[1360px] flex flex-col lg:flex-row gap-[40px] px-2 md:px-4 xxl:px-0 xl:gap-[120px] py-[20px] lg:py-[80px] mx-auto transition-all duration-300'>
+        <h6 className='text-[28px] lg:H-20 font-[600] mx-auto lg:mx-0 transition-all duration-300'>TESTIMONIALS</h6>
+        <div className='flex flex-col lg:flex-row gap-[20px] xl:gap-[40px] items-start mx-auto lg:mx-0 transition-all duration-300'>
+            <div className='flex items-center justify-center w-[60px] h-[40px] md:w-[60px] md:h-[60px] xl:w-[100px] xl:h-[100px] transition-all duration-300'>
             <Image src="/testimonials/quotes.svg" alt="quotes" width={83} height={67} 
-            className='w-[83px] h-[67px]'
+            className='w-[60px] h-[40px] md:w-[60px] md:h-[60px] xl:w-[83px] xl:h-[67px] transition-all duration-300'
             />
             </div>
-            <div className='flex flex-col gap-[40px]'>
+            <div className='w-full max-w-[300px] md:max-w-[916px] flex flex-col gap-[40px] transition-all duration-300'>
                 <div className={`overflow-hidden w-full ${isMobile ? 'max-w-[325px]' : 'max-w-[916px]'}`}> 
                     <div
                         className='flex transition-transform duration-500 ease-in-out'
@@ -82,31 +82,31 @@ const Testimonials = () => {
                         >
                             <div className='flex gap-[4px]'>
                             {Array.from({ length: testimonial.rating }).map((_, index) => (
-                                <div key={index} className='relative w-[27px] h-[26px] p-1 bg-[#00B67A]'>
-                                <Image src='/testimonials/star.svg' alt='star' width={23} height={22} />
+                                <div key={index} className='relative w-[22px] h-[21px] md:w-[27px] md:h-[26px] p-1 bg-[#00B67A] transition-all duration-300'>
+                                <Image src='/testimonials/star.svg' alt='star' width={15} height={15} className='flex items-center justify-center mx-auto w-[15px] h-[15px] md:w-[23px] md:h-[22px] transition-all duration-300'/>
                                 <Image src='/testimonials/star-style.svg' alt='star-style' width={5} height={3}
-                                    className='absolute top-[15px] left-[13px]' />
+                                    className='absolute top-[12px] left-[9px] md:top-[15px] md:left-[13px] transition-all duration-300' />
                                 </div>
                             ))}
                             </div>
                             <div className='max-w-[458px] flex flex-col gap-[24px]'>
-                            <h5 className='H-24 font-[600]'>{testimonial.testimonial}</h5>
+                            <h5 className='H6-20 xl:H-24 font-[600] transition-all duration-300'>{testimonial.testimonial}</h5>
                             <div className='flex flex-col items-start'>
-                                <p className='P-16 font-[500]'>{testimonial.name}</p>
-                                <p className='P-16 font-[500]'>{testimonial.position}</p>
+                                <p className='P-12 xl:P-16 font-[500] transition-all duration-300'>{testimonial.name}</p>
+                                <p className='P-12 xl:P-16 font-[500] transition-all duration-300'>{testimonial.position}</p>
                             </div>
                             </div>
                         </div>
                         ))}
                     </div>
                 </div>
-                <div className='flex w-full max-w-[88px] justify-between'> 
+                <div className='flex w-full max-w-[60px] md:max-w-[88px] xl:max-w-[88px] justify-between transition-all duration-300'> 
                     <Image
                     src='/testimonials/left-arrow.svg'
                     alt='left'
                     width={32}
                     height={32}
-                    className={`cursor-pointer ${startIndex === 0 ? 'opacity-50 pointer-events-none' : ''}`}
+                    className={`w-[24px] h-[24px] lg:w-[32px] lg:h-[32px] transition-all duration-300 cursor-pointer ${startIndex === 0 ? 'opacity-50 pointer-events-none' : ''}`}
                     onClick={handlePrev}
                     />
                     <Image
@@ -114,7 +114,7 @@ const Testimonials = () => {
                     alt='right'
                     width={32}
                     height={32}
-                    className={`cursor-pointer ${startIndex === maxIndex ? 'opacity-50 pointer-events-none' : ''}`}
+                    className={`w-[24px] h-[24px] lg:w-[32px] lg:h-[32px] transition-all duration-300 cursor-pointer ${startIndex === maxIndex ? 'opacity-50 pointer-events-none' : ''}`}
                     onClick={handleNext}
                     />
 

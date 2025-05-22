@@ -9,7 +9,7 @@ const Video = () => {
         alt="video-play" 
         width={200} 
         height={200} 
-        className='w-full h-[350px] md:h-[500px] object-cover rounded-[40px] mx-auto'
+        className='w-full h-[350px] md:h-[500px] object-cover rounded-[40px] mx-auto transition-all duration-300'
         />
       </div>
       <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>

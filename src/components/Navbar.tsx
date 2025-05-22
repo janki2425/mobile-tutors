@@ -143,7 +143,7 @@ const Navbar = () => {
                             ))}
                             </ul>
                             <div className='flex flex-col gap-4'>
-                                <Button variant="default" className='bg-navy-blue text-white rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
+                                <Button onClick={handleEnrollNow} variant="default" className='bg-navy-blue text-white rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
                                 <Button variant="outline" className='rounded-[16px] px-[24px] py-[16px] w-full'>LOGIN</Button>
                             </div>
                         </div>
