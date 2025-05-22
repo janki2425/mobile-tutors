@@ -34,31 +34,35 @@ const Faqs = () => {
   }
 
   return (
-    <div className='max-w-[1360px] flex flex-col lg:flex-row mx-auto my-[60px]'>
-        <div className='flex flex-col max-w-[836px] p-[40px] mx-auto gap-[24px]'>
-            <h3 className='font-[500] H3-48-120'>FAQs</h3>
+    <div className='max-w-[1360px] flex flex-col lg:flex-row mx-auto my-[40px] md:my-[60px] px-2 md:px-4 xxl:px-0 transition-all duration-300'>
+        <div className='flex flex-col w-full p-[40px] mx-auto gap-[24px] transition-all duration-300'>
+            <h3 className='font-[500] H-24 lg:H3-48-120'>FAQs</h3>
             <div className='lg:hidden block my-auto mx-auto'>
                 <Image src='/faqs/faq-img.png' alt='faq' width={500} height={500} />
             </div>
-            <div className='w-full'>
+            <div className='w-full max-w-[756px]'>
                 {faqData.map((faq, idx) => (
                 <div key={idx} className='mb-4'>
                     <div className='flex justify-between items-start font-[600] py-[12px]'>
-                        <h6 className='H6-20 font-[600]'>{faq.question}</h6>
+                        <h6 className='P-16 lg:H6-20 font-[600]'>{faq.question}</h6>
                         <div
                         className='cursor-pointer'
                         onClick={() => handleToggle(idx)}
                         > 
-                              <span className='font-[500] text-[24px]'>
+                              <span className='font-[500] H6-20 lg:H-24 transition-transform duration-300'>
                                   {openIndex === idx ? '-' : '+'}
                               </span>
                         </div>
                     </div>
-                    {openIndex === idx && faq.answer && (
-                    <div className='font-[500] P-16'>
-                        {faq.answer}
+                    <div 
+                        className={`overflow-hidden transition-all duration-400 ease-in-out ${
+                            openIndex === idx ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                    >
+                        <div className='font-[500] P-12 lg:P-16'>
+                            {faq.answer}
+                        </div>
                     </div>
-                    )}
                 </div>
                 ))}
             </div>
@@ -69,7 +73,7 @@ const Faqs = () => {
                 EXPLORE MORE
             </Button>
         </div>
-        <div className='lg:block hidden my-auto mx-auto min-w-[500px] min-h-[500px]'>
+        <div className='lg:block hidden mt-[75px] min-w-[500px] min-h-[500px]'>
             <Image src='/faqs/faq-img.png' alt='faq' width={500} height={500} />
         </div>
     </div>

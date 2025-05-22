@@ -139,9 +139,9 @@ const benefitList = [
 const Benefits = () => {
   return (
     <div className="w-full max-w-[1440px] bg-[#F5F5F5] my-[80px] rounded-[60px] mx-auto">
-      <div className="w-full max-w-[1360px] mx-auto py-[80px]">
-        <h3 className="H3-48-120 font-[500] text-center mb-[40px]">Our Benefits</h3>
-        <div className="flex flex-col gap-[40px]">
+      <div className="w-full max-w-[1360px] mx-auto py-[20px] lg:py-[80px] px-2 md:px-4 xxl:px-0 transition-all duration-300">
+        <h3 className="H5-32 lg:H3-48-120 font-[500] text-center mb-[20px] lg:mb-[40px]">Our Benefits</h3>
+        <div className="flex flex-col gap-[20px] lg:gap-[40px]">
           {benefitList.map((benefit) => {
             const isEven = benefit.id % 2 === 0;
 
@@ -150,7 +150,7 @@ const Benefits = () => {
                 key={benefit.id}
                 className={`w-full flex flex-col ${
                   isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'
-                } gap-[24px] lg:gap-[60px] items-center border border-[#E0E0E0] lg:border-none p-2 lg:p-0 rounded-[24px]`}
+                } gap-[12px] lg:gap-[60px] items-center p-2 lg:p-0 rounded-[24px] transition-all duration-300`}
               >
                 {/* Image Section */}
                 <div className="relative w-full lg:w-1/2">
@@ -159,21 +159,21 @@ const Benefits = () => {
                     alt="benefit"
                     width={660}
                     height={400}
-                    className="rounded-[24px] w-full h-auto md:max-h-[500px] lg:max-w-[660px] lg:max-h-[400px]"
+                    className="rounded-[24px] w-full h-auto md:max-h-[500px] lg:max-w-[660px] lg:max-h-[400px] transition-all duration-300"
                   />
                   <Image
                     src="/benefits/video-play.svg"
                     alt="play"
                     width={48}
                     height={48}
-                    className={`absolute top-[40px]  ${isEven ? 'right-[40px]' : 'left-[40px]'} w-[48px] h-[48px]`}
+                    className={`absolute top-[20px] md:top-[40px]  ${isEven ? 'right-[20px] md:right-[40px]' : 'left-[20px] md:left-[40px]'} w-[30px] h-[30px] md:w-[48px] md:h-[48px]`}
                   />
                 </div>
 
                 {/* Text Section */}
                 <div className="flex flex-col gap-[16px] max-w-full lg:max-w-[620px] mr-auto">
-                  <h4 className="H4-40-120 font-[500]">{benefit.title}</h4>
-                  <p className="P-14 font-[500] max-w-[580px]">{benefit.description}</p>
+                  <h4 className="H-24-120 lg:H4-40-120 font-[500]">{benefit.title}</h4>
+                  <p className="P-12 lg:P-18 font-[500] max-w-[580px]">{benefit.description}</p>
                 </div>
               </div>
             );

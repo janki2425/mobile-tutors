@@ -1,68 +1,30 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+import Sidebar from './Sidebar'
+// import {
+//     Sheet,
+//     SheetContent,
+//     SheetTrigger,
+//   } from "@/components/ui/sheet"
 import {  Menu } from "lucide-react"
 import Link from 'next/link'
-
-const navItems = [
-    {
-        id: 1,
-        name: 'HOME',
-        href: '/',
-        active: true
-    },
-    {
-        id: 2,
-        name: 'ABOUT US',
-        href: '/about',
-        active: false
-    },
-    {
-        id: 3,
-        name: 'COURSES',
-        href: '/courses',
-        active: false
-    },
-    {
-        id: 4,
-        name: 'FAQS',
-        href: '/faqs',
-        active: false
-    },
-    {
-        id: 5,
-        name: 'TESTIMONIALS',
-        href: '/testimonials',
-        active: false
-    },
-    {
-        id: 6,
-        name: 'BLOGS',
-        href: '/blogs',
-        active: false
-    },
-    {
-        id: 7,
-        name: 'RESOURCES',
-        href: '#',
-        active: false
-    },
-    
-]   
+import { useRouter } from 'next/navigation'
+import { navItems } from './Sidebar'
 
 const Navbar = () => {
+    const router = useRouter()
     const [items, setItems] = useState(navItems)
+    const [sheetOpen, setSheetOpen] = useState(false)
 
     const handleActive = (id: number) => {
         setItems(items.map(item => ({
             ...item,
             active: item.id === id
         })))
+    }
+    const handleEnrollNow = () => {
+        router.push('/get-started')
     }
 
   return (
@@ -77,10 +39,19 @@ const Navbar = () => {
             <div className='hidden cs:block'>
                 <ul className='flex gap-[8px] items-center P-14 text-black font-[600]'>
                     {items.map((item) => (
-                        <li key={item.id} 
-                        onClick={() => handleActive(item.id)}
-                        className={`px-[24px] py-[6px] rounded-[100px] cursor-pointer ${item.active ? 'border-[1px] border-black' : ''}`}>
-                            <Link href={item.href} >{item.name}</Link>
+                        <li 
+                        key={item.id} 
+                        onClick={() => {
+                            handleActive(item.id);
+                            setSheetOpen(false);
+                          }}
+                        className='cursor-pointer'>
+                        <Link 
+                            href={item.href}
+                            className={`P-14 px-[24px] py-[6px] rounded-[50px] text-black font-[600] ${item.active ? 'border-[1px] border-black' : ''}`}
+                        >
+                            {item.name}
+                        </Link>
                         </li>
                     ))}
                 </ul>
@@ -88,13 +59,16 @@ const Navbar = () => {
 
             {/* Desktop Buttons */}
             <div className='hidden cs:flex gap-[16px] items-center P-14 text-black font-[500]'>
-                <Button variant="navy" className='rounded-[16px] px-[24px] py-[8px] cursor-pointer'>GET STARTED</Button>
+                <Button 
+                onClick={handleEnrollNow}
+                variant="default" 
+                className='bg-navy-blue text-white rounded-[16px] px-[24px] py-[8px] cursor-pointer'>GET STARTED</Button>
                 <Button variant="outline" className='rounded-[16px] py-[8px] px-[24px] cursor-pointer'>LOGIN</Button>
             </div>
 
             {/* Mobile Menu */}
             <div className='cs:hidden flex'>
-                <Sheet>
+                {/* <Sheet>
                     <SheetTrigger asChild>
                         <button className="">
                             <Menu className="h-6 w-8" />
@@ -107,20 +81,30 @@ const Navbar = () => {
                         <div className="flex flex-col gap-6 mt-6 px-4">
                             <ul className='flex flex-col gap-4 P-14 text-black font-[500]'>
                             {items.map((item) => (
-                                <li key={item.id} 
-                                onClick={() => handleActive(item.id)}
-                                className={`px-[24px] py-[6px] rounded-[100px] cursor-pointer ${item.active ? 'border-[1px] border-black' : ''}`}>
-                                    <Link href={item.href} >{item.name}</Link>
+                                <li 
+                                key={item.id} 
+                                onClick={() => {
+                                    handleActive(item.id);
+                                    setSheetOpen(false);
+                                  }}
+                                className='w-full cursor-pointer'>
+                                <Link 
+                                    href={item.href}
+                                    className={`block w-full P-14 px-[24px] py-[6px] rounded-[50px] text-black font-[600] ${item.active ? 'border-[1px] border-black' : ''}`}
+                                >
+                                    {item.name}
+                                </Link>
                                 </li>
                             ))}
                             </ul>
                             <div className='flex flex-col gap-4'>
-                                <Button variant="navy" className='rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
-                                <Button variant="outline" className='rounded-[16px] w-full'>LOGIN</Button>
+                                <Button onClick={handleEnrollNow} variant="default" className='bg-navy-blue text-white rounded-[16px] px-[24px] py-[16px] w-full'>GET STARTED</Button>
+                                <Button variant="outline" className='rounded-[16px] px-[24px] py-[16px] w-full'>LOGIN</Button>
                             </div>
                         </div>
                     </SheetContent>
-                </Sheet>
+                </Sheet> */}
+                <Sidebar />
             </div>
         </nav>
       </div>

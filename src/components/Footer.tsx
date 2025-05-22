@@ -72,7 +72,7 @@ const paymentMethods: (PaymentMethod | AmexPaymentMethod)[] = [
 
 const Footer = () => {
   return (
-    <div className='w-full max-w-[1440px] py-12 bg-[#F4F4F4] flex flex-col items-center justify-center mx-auto'>
+    <div className='w-full py-12 bg-[#F4F4F4] flex flex-col items-center justify-center mx-auto'>
       <div className='w-full max-w-[1360px] px-4 md:px-6 lg:px-8 mx-auto'>
         {/* Top section with logo, links and buttons */}
         <div className='flex flex-col xl:flex-row gap-8 items-center md:items-start justify-between'>
@@ -89,7 +89,7 @@ const Footer = () => {
           
           {/* Links section */}
           <div className='flex flex-col lg:flex-row gap-8 lg:gap-24 items-start justify-between'>
-            <div className='flex md:flex-row flex-wrap gap-8 md:gap-12 xl:gap-28 items-start'>
+            <div className='flex md:flex-row flex-wrap gap-8 md:gap-12 xl:gap-28 items-start transition-all duration-300'>
                 <div className='flex flex-col gap-4'>
                     <h6 className='text-black font-[600] H6-20'>Quick Links</h6>
                     <ul className='flex flex-col gap-2 text-black font-[500] P-14'>
