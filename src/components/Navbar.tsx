@@ -1,61 +1,16 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet"
+import Sidebar from './Sidebar'
+// import {
+//     Sheet,
+//     SheetContent,
+//     SheetTrigger,
+//   } from "@/components/ui/sheet"
 import {  Menu } from "lucide-react"
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-
-const navItems = [
-    {
-        id: 1,
-        name: 'HOME',
-        href: '/',
-        active: true
-    },
-    {
-        id: 2,
-        name: 'ABOUT US',
-        href: '/about',
-        active: false
-    },
-    {
-        id: 3,
-        name: 'COURSES',
-        href: '/courses',
-        active: false
-    },
-    {
-        id: 4,
-        name: 'FAQS',
-        href: '/faqs',
-        active: false
-    },
-    {
-        id: 5,
-        name: 'TESTIMONIALS',
-        href: '/testimonials',
-        active: false
-    },
-    {
-        id: 6,
-        name: 'BLOGS',
-        href: '/blogs',
-        active: false
-    },
-    {
-        id: 7,
-        name: 'RESOURCES',
-        href: '#',
-        active: false
-    },
-    
-    
-]   
+import { navItems } from './Sidebar'
 
 const Navbar = () => {
     const router = useRouter()
@@ -113,7 +68,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div className='cs:hidden flex'>
-                <Sheet>
+                {/* <Sheet>
                     <SheetTrigger asChild>
                         <button className="">
                             <Menu className="h-6 w-8" />
@@ -148,7 +103,8 @@ const Navbar = () => {
                             </div>
                         </div>
                     </SheetContent>
-                </Sheet>
+                </Sheet> */}
+                <Sidebar />
             </div>
         </nav>
       </div>
