@@ -249,6 +249,18 @@ button.bg-black:hover,
     max-width: 660px;
   }
 }
+@media (min-width: 1279px) and (max-width: 1439px) {
+  .cs\:max-w-700 {
+    max-width: 700px;
+  }
+  .cs\:gap-80 {
+    gap: 80px;
+  }
+  .cs\:px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
 @media (min-width: 1280px) {
   .cs\:block {

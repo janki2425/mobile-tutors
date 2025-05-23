@@ -46,7 +46,7 @@ const Blogs = () => {
                 key={idx} 
                 onClick={() => handleBlogClick(blog.id)}
                 className='flex flex-col gap-[16px] lg:gap-[24px] max-w-[660px] h-auto cursor-pointer transition-all duration-300'>
-                        <div className='w-full h-full overflow-hidden rounded-[24px] hover:scale-[5.02] transition-all duration-700'>
+                        <div className='w-full h-full overflow-hidden rounded-[24px] hover:scale-[1.02] transition-all duration-700'>
                             <Image src={blog.image} alt={blog.title} width={660} height={400}  className='rounded-[24px] h-[200px] md:h-[300px] xl:h-[400px] object-cover transition-all duration-300 hover:scale-110'/>
                         </div>
                         <div className='flex flex-col gap-[8px] lg:gap-[16px] transition-all duration-300'>

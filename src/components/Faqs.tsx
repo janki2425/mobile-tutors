@@ -42,12 +42,13 @@ const Faqs = () => {
             </div>
             <div className='w-full max-w-[756px]'>
                 {faqData.map((faq, idx) => (
-                <div key={idx} className='mb-4'>
+                <div key={idx} 
+                onClick={() => handleToggle(idx)}
+                className='mb-4 cursor-pointer'>
                     <div className='flex justify-between items-start font-[600] py-[12px]'>
                         <h6 className='P-16 lg:H6-20 font-[600]'>{faq.question}</h6>
                         <div
                         className='cursor-pointer'
-                        onClick={() => handleToggle(idx)}
                         > 
                               <span className='font-[500] H6-20 lg:H-24 transition-transform duration-300'>
                                   {openIndex === idx ? '-' : '+'}
