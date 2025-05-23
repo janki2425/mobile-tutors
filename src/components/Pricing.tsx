@@ -48,7 +48,7 @@ const Pricing = () => {
             <hr />
             <div className='flex flex-col pt-0 lg:pt-[24px] gap-4 md:gap-[24px] transition-all duration-300'>
             <div className='flex flex-col gap-4 md:gap-[16px] mb-3 min-h-[348px] transition-all duration-300'>
-                <h6 className='P-18 lg:H6-20 font-[600]'>Launch GCSE Includes:</h6>
+                <h6 className='P-18 xl:H6-20 font-[600]'>Launch GCSE Includes:</h6>
                 {launchGCSE.map((item) => (
                 <div key={item.id} className='flex gap-[12px] items-start lg:gap-[16px] transition-all duration-300'>
                     <Image src='/Hero/icons/check.svg' alt="check" width={24} height={24} className='w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] transition-all duration-300'/>
@@ -69,7 +69,7 @@ const Pricing = () => {
             <hr />
             <div className='flex flex-col pt-4 lg:pt-[24px] gap-4 md:gap-[24px] transition-all duration-300'>
                 <div className='flex flex-col gap-4 md:gap-[16px] min-h-[348px] transition-all duration-300'>
-                <h6 className='P-18 lg:H6-20 font-[600]'>Launch GCSE Includes:</h6>
+                <h6 className='P-18 xl:H6-20 font-[600]'>Launch GCSE Includes:</h6>
                 {launchMastery.map((item) => (
                     <div key={item.id} className='flex gap-[12px] items-start lg:gap-[16px] transition-all duration-300'>
                     <Image src='/Hero/icons/check.svg' alt="check" width={24} height={24} className='w-[16px] h-[16px] lg:w-[24px] lg:h-[24px] transition-all duration-300'/>

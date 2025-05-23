@@ -44,13 +44,15 @@ const Content = () => {
                     height={400}
                     className="rounded-[24px] w-full h-auto md:max-h-[500px] lg:max-w-[660px] lg:max-h-[400px]"
                   />
-                  <Image
-                    src="/benefits/video-play.svg"
-                    alt="play"
-                    width={48}
-                    height={48}
-                    className='absolute top-[20px] right-[20px] md:top-[40px] md:right-[40px] w-[30px] h-[30px] md:w-[48px] md:h-[48px]'
-                  />
+                  <div className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] flex items-center justify-center absolute top-[20px] right-[20px] md:top-[40px] md:right-[40px] z-10 transition-all duration-300">
+                        <Image
+                            src="/success-story/video-play.svg"
+                            alt="play"
+                            width={48}
+                            height={48}
+                            className="w-[48px] h-[48px]"
+                        />
+                    </div>
                 </div>
 
                 {/* Text Section */}

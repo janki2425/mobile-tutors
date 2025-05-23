@@ -44,19 +44,20 @@ const Approach = () => {
                     height={400}
                     className="rounded-[24px] w-full h-auto md:max-h-[500px] lg:max-w-[660px] lg:max-h-[400px] transition-all duration-300"
                   />
-                  <Image
-                    src="/benefits/video-play.svg"
-                    alt="play"
-                    width={48}
-                    height={48}
-                    className='absolute top-[20px] right-[20px] md:top-[40px]  lg:top-[40px] lg:right-[40px] w-[30px] h-[30px] md:w-[48px] md:h-[48px] lg:w-[48px] lg:h-[48px]'
-                  />
+                  <div className="w-[40px] h-[40px] md:w-[60px] md:h-[60px] flex items-center justify-center absolute top-[20px] right-[20px] md:top-[40px] md:right-[40px] z-10 transition-all duration-300">
+                        <Image
+                            src="/success-story/video-play.svg"
+                            alt="play"
+                            width={48}
+                            height={48}
+                            className="w-[48px] h-[48px]"
+                        />
+                    </div>
                 </div>
-
                 {/* Text Section */}
                 <div className="flex flex-col gap-[8px] lg:gap-[16px] max-w-full lg:max-w-[640px] transition-all duration-300">
                   <h4 className="H-24 lg:H4-40-120 font-[500] transition-all duration-300">{content.title}</h4>
-                  <p className="P-12 lg:P-18 font-[500] max-w-[640px] transition-all duration-300">{content.description}</p>
+                  <p className="P-12 lg:P-16 font-[500] max-w-[640px] transition-all duration-300">{content.description}</p>
                 </div>
               </div>
             );
