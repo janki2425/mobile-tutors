@@ -59,10 +59,16 @@ const Page = () => {
     <>
     <div className='w-full max-w-[1360px] mx-auto my-[60px] px-2 md:px-4 xxl:px-0'>
       <div className='w-full mx-auto'>
-      <div className='flex flex-wrap justify-items-center gap-[20px] md:gap-[40px] lg:gap-[60px] transition-all duration-300'>
+      <div className='flex flex-wrap justify-center gap-[20px] md:gap-[40px] xl:gap-[60px] rounded-[24px] transition-all duration-300'>
             {courseData.map((course, idx) => (
-                <div key={idx} className='w-full max-w-[250px] md:max-w-[280px] lg:max-w-[413px] transition-all duration-300 mx-auto cursor-pointer' onClick={() => handleCourseClick(course.id)}>
-                    <Image src={course.image} alt={course.title} width={413} height={300} className="rounded-t-[24px] h-[180px] md:h-[220px] lg:h-[300px] object-cover transition-all duration-300" />
+                <div
+                    key={idx}
+                    className='w-full max-w-[250px] md:max-w-[280px] lg:max-w-[387px] cursor-pointer'
+                    onClick={() => handleCourseClick(course.id)}
+                >
+                    <div className='w-full h-[180px] md:h-[220px] lg:h-[300px]'>
+                        <Image src={course.image} alt="course" width={387} height={300} className="rounded-t-[24px] w-full h-full object-cover transition-all duration-300" />
+                    </div>
                     <div className={`flex flex-col w-full ${course.id === 1 || course.id === 5 ? 'bg-navy-blue text-white' : 
                         course.id === 2 || course.id === 4 ? 'bg-black text-white' : 'bg-gold text-black'
                     } gap-[4px] lg:gap-[8px] text-start px-[24px] py-[12px] lg:py-[21px] rounded-b-[24px] transition-all duration-300`}>
