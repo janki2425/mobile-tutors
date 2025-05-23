@@ -37,13 +37,15 @@ const SuccessStory = () => {
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-1.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
                     <div className="absolute inset-0 bg-black/[24%] rounded-[24px]"></div>
-                    <Image
-                        src="/success-story/video-play.svg"
-                        alt="play"
-                        width={32}
-                        height={32}
-                        className="absolute top-[28px] right-[28px] z-10"
-                    />
+                    <div className="w-[40px] h-[40px] flex items-center justify-center absolute top-[28px] right-[28px] z-10">
+                        <Image
+                            src="/success-story/video-play.svg"
+                            alt="play"
+                            width={32}
+                            height={32}
+                            className="w-[32px] h-[32px]"
+                        />
+                    </div>
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px] transition-all duration-300">
                     <h6 className="H6-20 font-[600] text-white">Sara</h6>
@@ -58,13 +60,15 @@ const SuccessStory = () => {
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-2.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
                     <div className="absolute inset-0 bg-black/[24%] rounded-[24px]"></div>
-                    <Image
-                        src="/success-story/video-play.svg"
-                        alt="play"
-                        width={32}
-                        height={32}
-                        className="absolute top-[28px] right-[28px] z-10"
-                    />
+                    <div className="w-[40px] h-[40px] flex items-center justify-center absolute top-[28px] right-[28px] z-10">
+                        <Image
+                            src="/success-story/video-play.svg"
+                            alt="play"
+                            width={32}
+                            height={32}
+                            className="w-[32px] h-[32px]"
+                        />
+                    </div>
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px]">
                     <h6 className="H6-20 font-[600] text-white">Emman</h6>
@@ -78,13 +82,15 @@ const SuccessStory = () => {
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-3.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
                     <div className="absolute inset-0 bg-black/[24%] rounded-[24px]"></div>
-                    <Image
-                        src="/success-story/video-play.svg"
-                        alt="play"
-                        width={32}
-                        height={32}
-                        className="absolute top-[28px] right-[28px] z-10"
-                    />
+                    <div className="w-[40px] h-[40px] flex items-center justify-center absolute top-[28px] right-[28px] z-10">
+                        <Image
+                            src="/success-story/video-play.svg"
+                            alt="play"
+                            width={32}
+                            height={32}
+                            className="w-[32px] h-[32px]"
+                        />
+                    </div>
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px]">
                     <h6 className="H6-20 font-[600] text-white">John</h6>
@@ -98,13 +104,15 @@ const SuccessStory = () => {
                     <div className="absolute inset-0 bg-[url('/success-story/success-story-4.jpg')] bg-cover bg-center bg-no-repeat rounded-[24px] h-full">
                     </div>
                     <div className="absolute inset-0 bg-black/[24%] rounded-[24px]"></div>
-                    <Image
-                        src="/success-story/video-play.svg"
-                        alt="play"
-                        width={32}
-                        height={32}
-                        className="absolute top-[28px] right-[28px] z-10"
-                    />
+                    <div className="w-[40px] h-[40px] flex items-center justify-center absolute top-[28px] right-[28px] z-10">
+                        <Image
+                            src="/success-story/video-play.svg"
+                            alt="play"
+                            width={32}
+                            height={32}
+                            className="w-[32px] h-[32px]"
+                        />
+                    </div>
                 </div>
                 <div className="flex flex-col items-start gap-[8px] absolute bottom-[24px] left-[24px] md:left-[40px] lg:left-[24px]">
                     <h6 className="H6-20 font-[600] text-white">Emy</h6>

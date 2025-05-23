@@ -11,11 +11,11 @@ const Mission = () => {
                 <p className='P-12 lg:P-16 font-[500]'>We assess your child&apos;s strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
             </div>
             <div className='flex flex-col gap-[8px] lg:gap-[16px] text-center lg:text-left transition-all duration-300'>
-                <h3 className='H-24 lg:H4-40-120 font-[600]'>Our Vision</h3>
+                <h3 className='H6-20 lg:H-24 font-[600]'>Our Vision</h3>
                 <p className='P-12 lg:P-16 font-[500]'>We assess your child&apos;s strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
             </div>
             <div className='flex flex-col gap-[8px] lg:gap-[16px] text-center lg:text-left transition-all duration-300'>
-                <h3 className='H-24 lg:H4-40-120 font-[600]'>Our Values</h3>
+                <h3 className='H6-20 lg:H-24 font-[600]'>Our Values</h3>
                 <p className='P-12 lg:P-16 font-[500]'>We assess your child&apos;s strengths, weaknesses, and learning style to create a customised plan that targets their unique needs and ensures clear progress.</p>
             </div>
         </div>

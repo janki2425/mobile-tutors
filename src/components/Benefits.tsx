@@ -173,7 +173,7 @@ const Benefits = () => {
                 {/* Text Section */}
                 <div className="flex flex-col gap-[16px] max-w-full lg:max-w-[620px] mr-auto">
                   <h4 className="H-24-120 lg:H4-40-120 font-[500]">{benefit.title}</h4>
-                  <p className="P-12 lg:P-18 font-[500] max-w-[580px]">{benefit.description}</p>
+                  <p className="P-12 lg:P-16 font-[500] max-w-[580px]">{benefit.description}</p>
                 </div>
               </div>
             );

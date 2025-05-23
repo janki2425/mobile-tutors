@@ -60,7 +60,7 @@ const Testimonials = () => {
   return (
     <div className='w-full max-w-[1440px] my-[60px] bg-[#F5F5F5] rounded-[24px] mx-auto'>
       <div className='w-full max-w-[1360px] flex flex-col lg:flex-row gap-[40px] px-2 md:px-4 xxl:px-0 xl:gap-[120px] py-[20px] lg:py-[80px] mx-auto transition-all duration-300'>
-        <h6 className='text-[28px] lg:H-20 font-[600] mx-auto lg:mx-0 transition-all duration-300'>TESTIMONIALS</h6>
+        <h6 className='text-[28px] lg:H6-20 font-[600] mx-auto lg:mx-0 transition-all duration-300'>TESTIMONIALS</h6>
         <div className='flex flex-col lg:flex-row gap-[20px] xl:gap-[40px] items-start mx-auto lg:mx-0 transition-all duration-300'>
             <div className='flex items-center justify-center w-[60px] h-[40px] md:w-[60px] md:h-[60px] xl:w-[100px] xl:h-[100px] transition-all duration-300'>
             <Image src="/testimonials/quotes.svg" alt="quotes" width={83} height={67} 
