@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu } from "lucide-react"
+import { MenuIcon } from "lucide-react"
 import {
   Sheet,
   SheetContent,
@@ -74,13 +74,11 @@ export default function Sidebar() {
 
   return (
     <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-      <SheetTrigger asChild>
-        <button>
-          <Menu className="h-6 w-8" />
-        </button>
+      <SheetTrigger>
+        <MenuIcon className='w-6 h-6'/>
       </SheetTrigger>
 
-      <SheetContent side="left" className="w-[300px]">
+      <SheetContent side="left">
         <div className="flex pt-[13px] pl-10 items-center transition-all duration-500 ease-in-out">
           <Image src="/logo.png" alt="logo" width={111} height={54} />
         </div>
