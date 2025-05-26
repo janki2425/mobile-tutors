@@ -75,7 +75,7 @@ export default function Sidebar() {
   return (
     <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
       <SheetTrigger>
-        <MenuIcon className='w-6 h-6'/>
+        <MenuIcon className='w-6 h-6 cursor-pointer'/>
       </SheetTrigger>
 
       <SheetContent side="left">
